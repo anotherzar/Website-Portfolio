@@ -1,0 +1,278 @@
+/* 
+   1. CSS VARIABLES (ROOT)
+    */
+
+:root {
+    /* Colors */
+    --bg: #0f0f0f;
+    --bg-card: #1a1a1a;
+    --text: #e5e5e5;
+    --accent: #3b82f6;
+
+    /* Borders */
+    --border: #222;
+    --border-light: #333;
+    --border-soft: #ffffff10;
+    --border-soft-2: #ffffff15;
+
+    /* Interactive States */
+    --hover-bg: #222;
+    --cta-dark: #292929;
+    --cta-hover: #badb6e;
+
+    /* Border Radius */
+    --radius: 12px;
+    --radius-lg: 14px;
+    --radius-xl: 16px;
+
+    /* Spacing */
+    --space: 1.5rem;
+    --section-space: 70px;
+    --container-space: 40px;
+
+    /* Shadows */
+    --shadow-card: 0 10px 25px rgba(0, 0, 0, .25);
+    --accent-shadow: 0 0 25px #3b82f6;
+    --accent-soft-shadow: 0 0 18px #3b82f6;
+
+    /* Transitions */
+    --transition: .25s ease;
+
+    /* Typography */
+    --fs-h1: 2.8rem;
+    --fs-h2: 2.2rem;
+    --fs-body: 1rem;
+
+    /* Pattern Variables */
+    --pattern-mask-width: 40px;
+    --pattern-color: rgba(255, 255, 255, 0.205);
+    --pattern-offset: 40px;
+}
+
+/* 
+   2. BASE STYLES
+    */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding: 80px;
+    padding-top: 140px;
+}
+
+/* 
+   3. NAVIGATION
+    */
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+.nav a:hover {
+    background: var(--hover-bg);
+    color: var(--accent);
+}
+
+/* 
+   4. CONTENT & LAYOUT UTILITIES
+    */
+
+.content {
+    max-width: 100%;
+    margin: auto;
+    padding: 3rem 1rem;
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 2rem 0;
+}
+
+.card {
+    background: var(--bg-card);
+    padding: .5rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+}
+
+.card:hover {
+    transform: scale(1.03);
+    border-color: var(--accent);
+}
+
+/* 
+   7. FORMS
+    */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input,
+textarea {
+    background: #111;
+    border: 1px solid var(--border-light);
+    padding: 14px;
+    border-radius: var(--radius);
+    color: var(--text);
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--accent);
+}
+
+/* 
+   8. BUTTONS
+    */
+
+button {
+    background: var(--accent);
+    border: none;
+    padding: 14px;
+    border-radius: var(--radius);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+/* 
+   9. EFFECTS
+    */
+
+.motion-hover:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: var(--shadow-card);
+}
+
+/* 
+   10. PRELOADER
+    */
+/* id selector */
+#preloader {
+    position: fixed;
+    inset: 0;
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#loading-text {
+    font-size: 2rem;
+    color: var(--text);
+    opacity: 0;
+    animation: fadeText .4s ease forwards;
+}
+
+@keyframes fadeText {
+    to {
+        opacity: 1;
+    }
+}
+
+/* 
+   11. FOOTER
+    */
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid var(--border);
+    margin-top: 3rem;
+    background-color: var(--bg);
+}
+
+footer p {
+    opacity: 0.8;
+}
+
+
+/* 
+   12. RESPONSIVE DESIGN
+    */
+
+/* Mobile kecil (≤480px) */
+@media (max-width: 480px) {
+
+    /* Layout */
+    main {
+        padding: 0 10px;
+        padding-top: 80px;
+    }
+
+    /* Navigation */
+    .nav {
+        gap: 0.5rem;
+        padding: 0.75rem 0.5rem;
+    }
+
+    .nav a {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+    }
+
+
+}
+
+/* Mobile dan Tablet kecil (≤768px) */
+@media (max-width: 768px) {
+
+    /* Layout */
+    main {
+        padding: 0 15px;
+        padding-top: 100px;
+    }
+
+
+
+    /* Content Wrapper */
+    .content-wrapper {
+        border: none;
+        margin: 0;
+        padding: 0;
+        min-height: auto;
+    }
+}

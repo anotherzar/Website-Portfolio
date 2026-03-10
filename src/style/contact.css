@@ -1,0 +1,11 @@
+.content-contact{
+    width: 50%;
+    margin: auto;
+}
+
+@media (max-width: 1100px) {
+    .content-contact{
+        width: 98%;
+        margin: auto;
+    }
+}

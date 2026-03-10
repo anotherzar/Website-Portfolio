@@ -1,0 +1,786 @@
+/* 
+   1. BASE & LAYOUT
+    */
+
+
+main.halaman-profil {
+    padding-top: 60px;
+}
+
+
+.profil-wrapper {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: var(--text);
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: var(--accent);
+    border-radius: 2px;
+}
+
+.bagian-profil {
+    margin-top: 60px;
+    padding-bottom: 40px;
+}
+
+/* 
+   2. PROFILE HEADER SECTION
+    */
+
+
+.profile-banner {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.profile-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.profile-img {
+    object-fit: cover;
+    width: 180px !important;
+    height: 180px !important;
+    border-radius: 50%;
+    border: 8px solid var(--bg);
+    margin-top: -90px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.profil {
+    display: flex;
+    gap: 40px;
+    padding-top: 20px;
+    align-items: flex-end;
+}
+
+
+.profile-info {
+    margin-bottom: 20px;
+}
+
+.profile-info h1 {
+    margin-top: 0px !important;
+    margin-bottom: -24px !important;
+    font-weight: 700;
+}
+
+.profile-info h2 {
+    font-weight: 100;
+    font-size: 24px;
+    margin-bottom: -15px !important;
+}
+
+.profile-info h3 {
+    font-weight: 100;
+    font-size: 18px;
+    opacity: 0.75;
+}
+
+/* 
+   3. BIO SECTION
+    */
+
+.bagian-bio {
+    margin-top: 40px;
+}
+
+.teks-bio {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text);
+    opacity: 0.9;
+    text-align: justify;
+}
+
+/* 
+   4. PERSONALITY (MBTI) SECTION
+    */
+
+.personality-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background: var(--bg-card);
+    padding: 28px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-soft);
+    margin-top: 20px;
+}
+
+.mbti-badge {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent);
+    background: rgba(59, 130, 246, 0.1);
+    padding: 20px 28px;
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--accent);
+    min-width: 140px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.mbti-details {
+    flex: 1;
+}
+
+.mbti-details h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 12px 0;
+}
+
+.mbti-details p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text);
+    opacity: 0.85;
+    margin: 0;
+}
+
+/* 
+   5. TECH STACK SECTION
+    */
+
+.tech-stack-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.tech-category {
+    background: var(--bg-card);
+    padding: 28px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-soft);
+}
+
+.tech-category-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 20px 0;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border-soft);
+}
+
+.tech-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.tech-icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    cursor: default;
+}
+
+.tech-icon-item i {
+    font-size: 3rem;
+}
+
+.tech-icon-item span {
+    font-size: 0.85rem;
+    color: var(--text);
+    opacity: 0.9;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* 
+   6. EXPERIENCE (TIMELINE) SECTION
+    */
+
+.timeline {
+    position: relative;
+    padding-left: 40px;
+    margin-top: 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border-soft);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 0px;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -49px;
+    top: 4px;
+    width: 16px;
+    height: 16px;
+    background: var(--accent);
+    border: 3px solid var(--bg);
+    border-radius: 50%;
+}
+
+.timeline-content {
+    background: var(--bg-card);
+    padding: 24px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-soft);
+}
+
+.timeline-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 8px 0;
+}
+
+.timeline-company {
+    font-size: 1rem;
+    color: var(--accent);
+    margin: 0 0 4px 0;
+    font-weight: 500;
+}
+
+.timeline-period {
+    font-size: 0.9rem;
+    color: var(--text);
+    opacity: 0.6;
+    margin: 0 0 12px 0;
+}
+
+.timeline-desc {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text);
+    opacity: 0.85;
+    margin: 0;
+}
+
+/* 
+   7. EDUCATION SECTION
+    */
+
+.pendidikan-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.pendidikan-item {
+    display: flex;
+    gap: 20px;
+    background: var(--bg-card);
+    padding: 28px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-soft);
+}
+
+.pendidikan-icon {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.pendidikan-content {
+    flex: 1;
+}
+
+.pendidikan-degree {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 8px 0;
+}
+
+.pendidikan-school {
+    font-size: 1rem;
+    color: var(--accent);
+    margin: 0 0 4px 0;
+}
+
+.pendidikan-year {
+    font-size: 0.9rem;
+    color: var(--text);
+    opacity: 0.6;
+    margin: 0 0 12px 0;
+}
+
+.pendidikan-desc {
+    font-size: 1rem;
+    color: var(--text);
+    opacity: 0.85;
+    margin: 0;
+}
+
+/* 
+   8. CERTIFICATE CARDS (LinkedIn Style)
+    */
+
+.certificate-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.certificate-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--bg-card);
+    padding: 16px 20px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-soft);
+    text-decoration: none;
+    position: relative;
+}
+
+.certificate-card:hover {
+    border-color: var(--accent);
+    background: rgba(59, 130, 246, 0.05);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+}
+
+.cert-icon {
+    font-size: 2.5rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.cert-info {
+    flex: 1;
+}
+
+.cert-info h4 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 4px 0;
+}
+
+.certificate-card:hover .cert-info h4 {
+    color: var(--accent);
+}
+
+.cert-info p {
+    font-size: 0.9rem;
+    color: var(--text);
+    opacity: 0.7;
+    margin: 0;
+}
+
+.cert-link-icon {
+    flex-shrink: 0;
+    opacity: 0.5;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--text);
+}
+
+.certificate-card:hover .cert-link-icon {
+    opacity: 1;
+    color: var(--text);
+}
+
+
+.certification-list {
+    margin: 8px 0 0 0;
+    padding-left: 20px;
+}
+
+.certification-list li {
+    font-size: 1rem;
+    color: var(--text);
+    opacity: 0.85;
+    margin-bottom: 6px;
+}
+
+/* 
+   9. INTERESTS (MINAT & HOBI) SECTION
+    */
+
+.minat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.minat-card {
+    background: var(--bg-card);
+    padding: 32px 24px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-soft);
+    text-align: center;
+}
+
+.minat-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.minat-card h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 8px 0;
+}
+
+.minat-card p {
+    font-size: 0.95rem;
+    color: var(--text);
+    opacity: 0.75;
+    margin: 0;
+}
+
+/* 
+   10. RESPONSIVE DESIGN
+    */
+
+
+@media (max-width: 480px) {
+
+
+    .profil-wrapper {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+
+    .profile-banner {
+        height: 200px;
+    }
+
+    .profile-img {
+        width: 120px !important;
+        height: 120px !important;
+        margin-top: -60px;
+        border: 5px solid var(--bg);
+    }
+
+    .profil {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .profile-info {
+        margin-bottom: 10px;
+    }
+
+    .profile-info h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .profile-info h2 {
+        font-size: 1.1rem !important;
+    }
+
+    .profile-info h3 {
+        font-size: 0.9rem !important;
+    }
+
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+
+    .teks-bio {
+        font-size: 1rem;
+    }
+
+
+    .personality-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .mbti-badge {
+        font-size: 1.6rem;
+        padding: 16px 24px;
+        min-width: auto;
+    }
+
+    .mbti-details h3 {
+        font-size: 1.2rem;
+    }
+
+    .mbti-details p {
+        font-size: 0.95rem;
+    }
+
+
+    .tech-stack-container {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-icons {
+        grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+        gap: 16px;
+    }
+
+    .tech-icon-item i {
+        font-size: 2.5rem;
+    }
+
+    .tech-icon-item span {
+        font-size: 0.75rem;
+    }
+
+
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .timeline-marker {
+        left: -30px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .timeline-item {
+        padding-left: 0px;
+    }
+
+    .timeline-title {
+        font-size: 1.1rem;
+    }
+
+
+    .pendidikan-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .pendidikan-icon {
+        font-size: 2.5rem;
+    }
+
+
+    .certificate-card {
+        padding: 12px 16px;
+        gap: 12px;
+    }
+
+    .cert-icon {
+        font-size: 2rem;
+    }
+
+    .cert-info h4 {
+        font-size: 0.95rem;
+    }
+
+    .cert-info p {
+        font-size: 0.85rem;
+    }
+
+    .cert-link-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+
+    .minat-grid {
+
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+    }
+
+    .minat-card {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+
+    main.halaman-profil {
+        padding: 0px;
+        padding-top: 60px;
+    }
+
+    .profil-wrapper {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+
+    .profile-banner {
+        height: 250px;
+    }
+
+    .profile-img {
+        width: 150px !important;
+        height: 150px !important;
+        margin-top: -75px;
+        border: 6px solid var(--bg);
+    }
+
+    .profil {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .personality-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+
+    .tech-stack-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .minat-grid {
+
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .minat-card {
+        width: auto;
+    }
+}
+
+
+@media (max-width: 1100px) {
+
+
+    .profil-wrapper {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    .profile-banner {
+        height: 250px;
+    }
+
+    .profile-img {
+        width: 150px !important;
+        height: 150px !important;
+        margin-top: -75px;
+        border: 6px solid var(--bg);
+    }
+
+    .profil {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .profile-info {
+        margin-bottom: 10px;
+    }
+
+    .profile-info h1 {
+        font-size: 1.8rem !important;
+    }
+
+    .profile-info h2 {
+        font-size: 1.3rem !important;
+    }
+
+    .profile-info h3 {
+        font-size: 1rem !important;
+    }
+
+
+    .section-title {
+        font-size: 1.7rem;
+    }
+
+
+    .teks-bio {
+        font-size: 1.05rem;
+    }
+
+
+    .tech-stack-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .timeline {
+        padding-left: 30px;
+    }
+
+    .timeline-marker {
+        left: -39px;
+        width: 14px;
+        height: 14px;
+    }
+
+    .timeline-item {
+        padding-left: 0px;
+    }
+
+    .timeline-title {
+        font-size: 1.2rem;
+    }
+
+
+    .pendidikan-item {
+        flex-direction: column;
+        text-align: left;
+        padding: 24px;
+    }
+
+    .pendidikan-icon {
+        font-size: 2.8rem;
+    }
+
+
+    .minat-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
