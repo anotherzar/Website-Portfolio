@@ -39,7 +39,7 @@
     --transition: .25s ease;
 
     /* Typography */
-    --fs-h1: 2.8rem;
+    --fs-h1: 3.8rem;
     --fs-h2: 2.2rem;
     --fs-body: 1rem;
 
@@ -71,7 +71,7 @@ body {
 main {
     flex: 1;
     padding: 80px;
-    padding-top: 140px;
+    padding-top: 75px;
 }
 
 /* 
@@ -84,7 +84,7 @@ main {
     left: 0;
     width: 100%;
     z-index: 999;
-    background: #111;
+    background: #131313;
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -263,7 +263,7 @@ footer p {
     /* Layout */
     main {
         padding: 0 15px;
-        padding-top: 100px;
+        padding-top: 0px;
     }
 
 
