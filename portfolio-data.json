@@ -1,0 +1,234 @@
+{
+    "categories": [
+        {
+            "id": "animation",
+            "title": "Animation",
+            "description": "Koleksi karya animasi 2D, rigging, dan motion graphics.",
+            "thumbnail": "src/assets/Thumbnails/animation-thumb.webp"
+        },
+        {
+            "id": "video",
+            "title": "Video",
+            "description": "Proyek visual effects, CGI compositing, dan video editing.",
+            "thumbnail": "src/assets/Thumbnails/Video-porto-thumb.webp"
+        },
+        {
+            "id": "graphic-design",
+            "title": "Graphic Design",
+            "description": "Desain grafis, branding, logo, dan identitas visual.",
+            "thumbnail": "src/assets/Thumbnails/design-thumb.webp"
+        },
+        {
+            "id": "case-study",
+            "title": "Case Study",
+            "description": "Koleksi karya studi kasus.",
+            "thumbnail": "src/assets/Thumbnails/journals.webp"
+        }
+    ],
+    "projects": [
+        {
+            "categoryId": "animation",
+            "title": "WIKA Sosialisasi Code of Conduct",
+            "description": "Sosialisasi Code of Conduct untuk PT Wijaya Karya - Animation",
+            "link": "https://youtu.be/hYjwTqMC338?si=nji8kjVqYQuYBSEe",
+            "thumbnail": "src/assets/Thumbnails/COC_wika.webp"
+        },
+        {
+            "categoryId": "video",
+            "title": "Drip Drop - Music Video",
+            "description": "Music video production for Drip Drop - Riging & Animation",
+            "link": "https://youtu.be/VqU9O0AMfr8?si=4G-6bkE20wCW5phn",
+            "thumbnail": "src/assets/Thumbnails/DripDropMv.webp"
+        },
+        {
+            "categoryId": "animation",
+            "title": "LILIFILM - Fan Edit",
+            "description": "Fan edit video production - VFX & Scribble Aniamtions",
+            "link": "https://www.youtube.com/watch?v=fK2Ror3ysao",
+            "thumbnail": "src/assets/Thumbnails/lilifilm.webp"
+        },
+        {
+            "categoryId": "animation",
+            "title": "Eric Worre",
+            "description": "Eric Worre - Motion Design & Video Production",
+            "link": "https://youtu.be/efq9VLyuNh4?si=rE1KhKT0K4PpoXaW",
+            "thumbnail": "src/assets/Thumbnails/DSA.webp"
+        },
+        {
+            "categoryId": "animation",
+            "title": "Instagram Reel 1",
+            "description": "Short form content - motion graphics",
+            "link": "https://www.instagram.com/reel/DHOHNQvAOAn/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+            "thumbnail": "src/assets/Thumbnails/t_ig_1.webp"
+        },
+        {
+            "categoryId": "animation",
+            "title": "Instagram Reel 2",
+            "description": "Mograph motivational video - motion graphics",
+            "link": "https://www.instagram.com/reel/C8NPKL_Bg1E/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+            "thumbnail": "src/assets/Thumbnails/t_ig_2.webp"
+        },
+        {
+            "categoryId": "animation",
+            "title": "Instagram Reel 3",
+            "description": "Mograph motivational video - motion graphics",
+            "link": "https://www.instagram.com/reel/C8Fl_NuhOG1/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+            "thumbnail": "src/assets/Thumbnails/t_ig_3.webp"
+        },
+        {
+            "categoryId": "video",
+            "title": "UKYSD - Music Video",
+            "description": "Music video collaboration with Stand Here Alone & For Revenge - Online Editor",
+            "link": "https://www.youtube.com/watch?v=46iSzNAo8Sk",
+            "thumbnail": "src/assets/Thumbnails/ukysd.webp"
+        },
+        {
+            "categoryId": "video",
+            "title": "Blackjack - CGI",
+            "description": "3D CGI Project",
+            "link": "https://youtu.be/h_5rn1Nk8dw?si=b2IxdwY8iRWMwPHI",
+            "thumbnail": "src/assets/Thumbnails/blackjack.webp"
+        },
+        {
+            "categoryId": "video",
+            "title": "Eid Mubarak WIKA",
+            "description": "Eid greeting video for WIKA - Motion Design & Video Production",
+            "link": "https://youtu.be/CYS_5l2oTUc?si=3bjikBjDRKGeaeAT",
+            "thumbnail": "src/assets/Thumbnails/eidwika.webp"
+        },
+        {
+            "categoryId": "video",
+            "title": "Unicorn Academy",
+            "description": "Unicorn Academy - VFX Particular Effects",
+            "link": "https://youtu.be/A-b7BirJEpQ?si=eGcV_te5evRhbzfu",
+            "thumbnail": "src/assets/Thumbnails/UCA.webp"
+        },
+        {
+            "categoryId": "video",
+            "title": "Instagram Post",
+            "description": "CGI 3D Product",
+            "link": "https://www.instagram.com/p/C4vKXfExYAx/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+            "thumbnail": "src/assets/Thumbnails/t_ig_4.webp"
+        },
+        {
+            "categoryId": "graphic-design",
+            "title": "",
+            "description": "",
+            "link": "",
+            "thumbnail": "src/assets/portfolio/desain-grafis/Banner_Mockup.webp"
+        },
+        {
+            "categoryId": "graphic-design",
+            "title": "",
+            "description": "",
+            "link": "",
+            "thumbnail": "src/assets/portfolio/desain-grafis/Battle_Of_Surabaya_LandingLogin-01.webp"
+        },
+        {
+            "categoryId": "graphic-design",
+            "title": "",
+            "description": "",
+            "link": "",
+            "thumbnail": "src/assets/portfolio/desain-grafis/CD_Case_[MOCKUP].webp"
+        },
+        {
+            "categoryId": "graphic-design",
+            "title": "",
+            "description": "",
+            "link": "",
+            "thumbnail": "src/assets/portfolio/desain-grafis/Happy_Lily_Landyard[MOCKUP].webp"
+        },
+        {
+            "categoryId": "graphic-design",
+            "title": "",
+            "description": "",
+            "link": "",
+            "thumbnail": "src/assets/portfolio/desain-grafis/Kartu_Nama[Mockup].webp"
+        },
+        {
+            "categoryId": "graphic-design",
+            "title": "",
+            "description": "",
+            "link": "",
+            "thumbnail": "src/assets/portfolio/desain-grafis/Map_Folder[Mockup].webp"
+        },
+        {
+            "categoryId": "graphic-design",
+            "title": "",
+            "description": "",
+            "link": "",
+            "thumbnail": "src/assets/portfolio/desain-grafis/Paper_Bag[MOCKUP].webp"
+        },
+        {
+            "categoryId": "graphic-design",
+            "title": "",
+            "description": "",
+            "link": "",
+            "thumbnail": "src/assets/portfolio/desain-grafis/Surat[MOCKUP].webp"
+        },
+        {
+            "categoryId": "graphic-design",
+            "title": "",
+            "description": "",
+            "link": "",
+            "thumbnail": "src/assets/portfolio/desain-grafis/Pemberitahuan_UAS.webp",
+            "aspectRatio": "4/5"
+        },
+        {
+            "categoryId": "graphic-design",
+            "title": "",
+            "description": "",
+            "link": "",
+            "thumbnail": "src/assets/portfolio/desain-grafis/ukysd-credits.webp",
+            "aspectRatio": "4/3"
+        },
+        {
+            "categoryId": "graphic-design",
+            "title": "",
+            "description": "",
+            "link": "",
+            "thumbnail": "src/assets/portfolio/desain-grafis/PFP_Data-01.webp",
+            "aspectRatio": "1/1"
+        },
+        {
+            "categoryId": "graphic-design",
+            "title": "",
+            "description": "",
+            "link": "",
+            "thumbnail": "src/assets/portfolio/desain-grafis/PFP_Data-02.webp",
+            "aspectRatio": "1/1"
+        },
+        {
+            "categoryId": "graphic-design",
+            "title": "",
+            "description": "",
+            "link": "",
+            "thumbnail": "src/assets/portfolio/desain-grafis/Aaron-cassete.webp",
+            "aspectRatio": "1/1"
+        },
+        {
+            "categoryId": "graphic-design",
+            "title": "",
+            "description": "",
+            "link": "",
+            "thumbnail": "src/assets/portfolio/desain-grafis/chamber-vlrt-feeds.webp",
+            "aspectRatio": "1/1"
+        },
+        {
+            "categoryId": "graphic-design",
+            "title": "",
+            "description": "",
+            "link": "",
+            "thumbnail": "src/assets/portfolio/desain-grafis/orens-network.webp",
+            "aspectRatio": "4/5"
+        },
+        {
+            "categoryId": "graphic-design",
+            "title": "",
+            "description": "",
+            "link": "",
+            "thumbnail": "src/assets/portfolio/desain-grafis/Poster-short-mv-Sebelah.webp",
+            "aspectRatio": "4/5"
+        }
+    ]
+}
