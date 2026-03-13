@@ -107,7 +107,43 @@ function closePlaylist() {
     document.getElementById('playlist-hub').style.display = 'block';
     
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    handleBackToTop();
 }
 
-// Jalankan fetch otomatis ketika halaman mulai render
-document.addEventListener('DOMContentLoaded', loadPortfolioData);
+// Logic button balik ke atas
+function handleBackToTop() {
+    const backToTopBtn = document.getElementById('backToTop');
+    const playlistView = document.getElementById('playlist-view');
+    const footer = document.querySelector('footer');
+    
+    if (!backToTopBtn || !playlistView || !footer) return;
+
+    // if scroll ke bawah
+    const isPlaylistActive = playlistView.style.display === 'block';
+    const isScrolledDown = window.scrollY > 300;
+
+    if (isPlaylistActive && isScrolledDown) {
+        backToTopBtn.classList.add('visible');
+        
+        // Logika biar ga nabrak footer
+        const footerRect = footer.getBoundingClientRect();
+        const viewportHeight = window.innerHeight;
+        const buttonMargin = 30; // margin default dari bawah
+        
+        // Kalo footer mulai keliatan di layar
+        if (footerRect.top < viewportHeight) {
+            const offset = viewportHeight - footerRect.top + buttonMargin;
+            backToTopBtn.style.bottom = `${offset}px`;
+        } else {
+            backToTopBtn.style.bottom = `${buttonMargin}px`;
+        }
+    } else {
+        backToTopBtn.classList.remove('visible');
+    }
+}
+
+// pre-fetch data
+document.addEventListener('DOMContentLoaded', () => {
+    loadPortfolioData();
+    window.addEventListener('scroll', handleBackToTop);
+});
