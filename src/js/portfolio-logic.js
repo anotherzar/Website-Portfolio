@@ -1,3 +1,4 @@
+// Deployment trigger: 2026-03-13
 let portfolioDatabase = { categories: [], projects: [] };
 
 async function loadPortfolioData() {
