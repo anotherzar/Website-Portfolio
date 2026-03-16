@@ -229,6 +229,13 @@
             "link": "",
             "thumbnail": "src/assets/portfolio/desain-grafis/Poster-short-mv-Sebelah.webp",
             "aspectRatio": "4/5"
+        },
+        {
+            "categoryId": "video",
+            "title": "Formadiksi KIPK",
+            "description": "Video Promosi Paslon",
+            "link": "https://drive.google.com/file/d/1RIGLSdPdbWF1tm5q0jH4YW6drOW__Efw/view?usp=sharing",
+            "thumbnail": "src/assets/portfolio/video/formadiksi-kipk.webp"
         }
     ]
 }
