@@ -1,22 +1,48 @@
-// Variabel global
-let count = 0;
-let toggle = false;
-
-// Fungsi validasi form kontak
-function kirimPesan() {
+async function kirimPesan() {
     const nama = document.getElementById("nama").value;
     const email = document.getElementById("email").value;
     const subjek = document.getElementById("subjek").value;
     const pesan = document.getElementById("pesan").value;
+    const status = document.getElementById("status");
 
     if (nama === "" || subjek === "" || pesan === "" || !email.includes("@")) {
-        document.getElementById("status").innerText = "Data tidak valid!";
-        document.getElementById("status").style.color = "red";
+        status.innerText = "Mohon lengkapi data dengan benar!";
+        status.style.color = "#ff4d4d";
         return;
     }
 
-    document.getElementById("status").innerText = "Pesan siap dikirim!";
-    document.getElementById("status").style.color = "#3b82f6";
+    status.innerText = "Sedang mengirim pesan...";
+    status.style.color = "#8e8e93";
+
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+            },
+            body: JSON.stringify({
+                access_key: "13d2cb84-714c-400e-bf21-db18caa75743",
+                subject: `Kontak dari Portfolio: ${subjek}`,
+                from_name: nama,
+                email: email,
+                message: pesan,
+            }),
+        });
+
+        const result = await response.json();
+        if (result.success) {
+            status.innerText = "Pesan berhasil dikirim! Saya akan segera menghubungi Anda.";
+            status.style.color = "#badb6e";
+            document.getElementById("contactForm").reset();
+        } else {
+            status.innerText = "Gagal mengirim pesan. Silakan coba lagi nanti.";
+            status.style.color = "#ff4d4d";
+        }
+    } catch (error) {
+        status.innerText = "Terjadi kesalahan jaringan.";
+        status.style.color = "#ff4d4d";
+    }
 }
 
 // Drag-to-scroll slider

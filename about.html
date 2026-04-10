@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="src/style/global.css">
     <link rel="stylesheet" href="src/style/pattern-margin.css">
     <link rel="stylesheet" href="src/style/about.css">
+    <link rel="stylesheet" href="src/style/translate.css">
 
     <!-- Devicon for tech icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
@@ -25,10 +26,10 @@
 
     <header>
         <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="portfolio.html">Portofolio</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html" data-t="nav_home">Home</a>
+            <a href="about.html" data-t="nav_about">About</a>
+            <a href="portfolio.html" data-t="nav_portfolio">Portofolio</a>
+            <a href="contact.html" data-t="nav_contact">Contact</a>
         </nav>
     </header>
 
@@ -43,16 +44,16 @@
                 <div class="profil">
                     <img src="src/assets/images/pfp.webp" class="profile-img" fetchpriority="high">
                     <div class="profile-info">
-                        <h1>Fazar</h1>
-                        <h2>Mahasiswa Teknik Informatika</h2>
-                        <h3>📍 Jakarta, Indonesia</h3>
+                        <h1 data-en="Fazar">Fazar</h1>
+                        <h2 data-en="Informatics Engineering Student">Mahasiswa Teknik Informatika</h2>
+                        <h3 data-en="📍 Jakarta, Indonesia">📍 Jakarta, Indonesia</h3>
                     </div>
                 </div>
 
                 <!-- Bio Section -->
                 <div class="bagian-profil bagian-bio">
-                    <h2 class="section-title">Tentang Saya</h2>
-                    <p class="teks-bio">
+                    <h2 class="section-title" data-t="about_title">Tentang Saya</h2>
+                    <p class="teks-bio" data-en="Hello! I'm Fazar, a D4 Digital Multimedia Technology student at Jakarta State Polytechnic. Since 2021, I've been working as a remote Motion Graphics Designer. I have collaborated with Sony Music for music video post-production and worked as a 3D Artist at Orbit Universe Studio. I won 3rd place in a poster design competition in Jakarta Province. I also enjoy playing electric guitar and listening to music for creative inspiration.">
                         Halo! Saya Fazar, mahasiswa D4 Teknik Multimedia Digital di Politeknik Negeri Jakarta.
                         Sejak 2021, saya bekerja sebagai Motion Graphics Designer secara remote. Pernah berkolaborasi
                         dengan Sony Music untuk post-produksi music video (MV) dan sebagai 3D Artist di Orbit Universe Studio. Meraih Juara
@@ -64,12 +65,12 @@
 
                 <!-- MBTI Personality Section -->
                 <div class="bagian-profil">
-                    <h2 class="section-title">Personality</h2>
+                    <h2 class="section-title" data-t="personality_title">Personality</h2>
                     <div class="personality-container">
                         <div class="mbti-badge">INTJ-T</div>
                         <div class="mbti-details">
                             <h3>The Architect</h3>
-                            <p>Strategic thinker dengan visi jangka panjang. Analytical, independent, dan selalu driven
+                            <p data-t="mbti_desc">Strategic thinker dengan visi jangka panjang. Analytical, independent, dan selalu driven
                                 untuk continuous improvement. Passionate dalam problem-solving dan mengeksplorasi
                                 ide-ide kompleks.</p>
                         </div>
@@ -78,7 +79,7 @@
 
                 <!-- Tech Stack Section -->
                 <div class="bagian-profil">
-                    <h2 class="section-title">Tech Stack</h2>
+                    <h2 class="section-title" data-t="tech_stack_title">Tech Stack</h2>
                     <div class="tech-stack-container">
                         <!-- Frontend -->
                         <div class="tech-category">
@@ -184,7 +185,7 @@
 
                 <!-- Experience Section -->
                 <div class="bagian-profil">
-                    <h2 class="section-title">Pengalaman</h2>
+                    <h2 class="section-title" data-t="experience_title">Pengalaman</h2>
                     <div class="timeline">
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
@@ -192,7 +193,7 @@
                                 <h3 class="timeline-title">Online Editor</h3>
                                 <p class="timeline-company">Studio Titik Sembilan & Sony Music</p>
                                 <p class="timeline-period">2025</p>
-                                <p class="timeline-desc">
+                                <p class="timeline-desc" data-t="exp_online_editor_desc">
                                     Berkesempatan bergabung dengan team Studio Titik Sembilan sebagai online editor
                                     untuk
                                     produksi music video. Mengerjakan post-production dan editing untuk project music
@@ -210,8 +211,8 @@
                             <div class="timeline-content">
                                 <h3 class="timeline-title">Web Development Projects</h3>
                                 <p class="timeline-company">Academic & Personal Projects</p>
-                                <p class="timeline-period">2024 - Sekarang</p>
-                                <p class="timeline-desc">
+                                <p class="timeline-period" data-t="period_present">2024 - Sekarang</p>
+                                <p class="timeline-desc" data-t="exp_web_dev_desc">
                                     Mengerjakan berbagai project web development menggunakan framework modern. Fokus
                                     pada responsive design dan motion design.
                                 </p>
@@ -224,7 +225,7 @@
                                 <h3 class="timeline-title">3D Artist</h3>
                                 <p class="timeline-company">Orbit Universe Studio</p>
                                 <p class="timeline-period">2024</p>
-                                <p class="timeline-desc">
+                                <p class="timeline-desc" data-t="exp_3d_artist_desc">
                                     Berkesempatan bergabung dengan team Orbit Universe Studio sebagai 3D Artist untuk
                                     mengerjakan project internal BUMN. Bertanggung jawab dalam pembuatan aset 3D,
                                     modeling,
@@ -240,8 +241,8 @@
                             <div class="timeline-content">
                                 <h3 class="timeline-title">Public Relations Intern</h3>
                                 <p class="timeline-company">PT Wijaya Karya Industri & Konstruksi</p>
-                                <p class="timeline-period">2023 Praktik Kerja Industri (SMK)</p>
-                                <p class="timeline-desc">
+                                <p class="timeline-period" data-t="period_prakerin">2023 Praktik Kerja Industri (SMK)</p>
+                                <p class="timeline-desc" data-t="exp_pr_intern_desc">
                                     Melakukan magang di bagian Public Relations, membantu dokumentasi kegiatan
                                     perusahaan,
                                     pembuatan konten media sosial, dan editing video untuk keperluan promosi corporate.
@@ -253,10 +254,10 @@
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
-                                <h3 class="timeline-title">Juara 3 Lomba Desain Poster</h3>
-                                <p class="timeline-company">Balaikota Jakarta - Kompetisi Tingkat Provinsi</p>
+                                <h3 class="timeline-title" data-t="exp_poster_title">Juara 3 Lomba Desain Poster</h3>
+                                <p class="timeline-company" data-t="exp_poster_company">Balaikota Jakarta - Kompetisi Tingkat Provinsi</p>
                                 <p class="timeline-period">2022</p>
-                                <p class="timeline-desc">
+                                <p class="timeline-desc" data-t="exp_poster_desc">
                                     Meraih prestasi Juara 3 dalam kompetisi desain poster tingkat se-Provinsi Jakarta
                                     yang
                                     diselenggarakan di Balaikota Jakarta. Kompetisi ini mempertandingkan kemampuan
@@ -272,8 +273,8 @@
                             <div class="timeline-content">
                                 <h3 class="timeline-title">Motion Graphics Designer</h3>
                                 <p class="timeline-company">Freelance / Remote Work</p>
-                                <p class="timeline-period">2021 - Sekarang</p>
-                                <p class="timeline-desc">
+                                <p class="timeline-period" data-en="2021 - Present">2021 - Sekarang</p>
+                                <p class="timeline-desc" data-en="Working as a remote motion graphics designer for various clients. Specialized in motion design, video editing using After Effects and Premiere Pro, as well as creating visual content for social media and digital promotion.">
                                     Bekerja sebagai motion graphics designer remote untuk berbagai klien.
                                     Spesialisasi dalam motion design, video editing menggunakan After Effects dan
                                     Premiere Pro,
@@ -286,15 +287,15 @@
 
                 <!-- Education Section -->
                 <div class="bagian-profil">
-                    <h2 class="section-title">Pendidikan</h2>
+                    <h2 class="section-title" data-t="edu_title">Pendidikan</h2>
                     <div class="pendidikan-container">
                         <div class="pendidikan-item">
                             <div class="pendidikan-icon">🎓</div>
                             <div class="pendidikan-content">
-                                <h3 class="pendidikan-degree">D4 Teknik Multimedia Digital</h3>
-                                <p class="pendidikan-school">Politeknik Negeri Jakarta</p>
-                                <p class="pendidikan-year">2024 - Sekarang (Semester 4)</p>
-                                <p class="pendidikan-desc">
+                                <h3 class="pendidikan-degree" data-t="edu_d4_degree">D4 Teknik Multimedia Digital</h3>
+                                <p class="pendidikan-school" data-t="edu_d4_school">Politeknik Negeri Jakarta</p>
+                                <p class="pendidikan-year" data-t="period_present_sem4">2024 - Sekarang (Semester 4)</p>
+                                <p class="pendidikan-desc" data-t="edu_d4_desc">
                                     Sedang menempuh pendidikan D4 Teknik Multimedia Digital dengan fokus pada Software
                                     Engineering,
                                     Web Development, dan Game Development.
@@ -305,10 +306,10 @@
                         <div class="pendidikan-item">
                             <div class="pendidikan-icon">🏫</div>
                             <div class="pendidikan-content">
-                                <h3 class="pendidikan-degree">SMK - Jurusan Multimedia</h3>
-                                <p class="pendidikan-school">SMK Prestasi Prima</p>
+                                <h3 class="pendidikan-degree" data-t="edu_smk_degree">SMK - Jurusan Multimedia</h3>
+                                <p class="pendidikan-school" data-t="edu_smk_school">SMK Prestasi Prima</p>
                                 <p class="pendidikan-year">2022 - 2024</p>
-                                <p class="pendidikan-desc">
+                                <p class="pendidikan-desc" data-t="edu_smk_desc">
                                     Lulusan SMK jurusan Multimedia dengan fokus pada desain grafis, video editing,
                                     dan dasar-dasar pemrograman web. Pengalaman hands-on dengan Adobe Creative Suite dan
                                     web development.
@@ -319,7 +320,7 @@
                         <div class="pendidikan-item">
                             <div class="pendidikan-icon">📜</div>
                             <div class="pendidikan-content">
-                                <h3 class="pendidikan-degree">Sertifikasi & Online Courses</h3>
+                                <h3 class="pendidikan-degree" data-t="cert_title">Sertifikasi & Online Courses</h3>
                                 <p class="pendidikan-school">Various Online Platforms</p>
                                 <p class="pendidikan-year">2021 - 2025</p>
                                 <div class="certificate-cards">
@@ -327,7 +328,7 @@
                                         class="certificate-card">
                                         <div class="cert-icon">💻</div>
                                         <div class="cert-info">
-                                            <h4>Pengenalan ke Logika Pemrograman (Programming Logic 101)</h4>
+                                            <h4 data-t="cert_logic">Pengenalan ke Logika Pemrograman (Programming Logic 101)</h4>
                                             <p>Dicoding Indonesia</p>
                                         </div>
                                         <span class="cert-link-icon">↗</span>
@@ -337,7 +338,7 @@
                                         class="certificate-card">
                                         <div class="cert-icon">📊</div>
                                         <div class="cert-info">
-                                            <h4>Belajar Dasar Visualisasi Data</h4>
+                                            <h4 data-t="cert_viz">Belajar Dasar Visualisasi Data</h4>
                                             <p>Dicoding Indonesia</p>
                                         </div>
                                         <span class="cert-link-icon">↗</span>
@@ -347,9 +348,9 @@
                                         target="_blank" class="certificate-card">
                                         <div class="cert-icon">🎨</div>
                                         <div class="cert-info">
-                                            <h4>Pelatihan Peningkatan Kompetensi Peserta Didik SMK Bidang Keahlian
+                                            <h4 data-t="cert_multimedia">Pelatihan Peningkatan Kompetensi Peserta Didik SMK Bidang Keahlian
                                                 Multimedia</h4>
-                                            <p>Pusat Pengembangan Kompetensi Pendidik, Tenaga Kependidikan Dan Kejuruan
+                                            <p data-t="cert_multimedia_school">Pusat Pengembangan Kompetensi Pendidik, Tenaga Kependidikan Dan Kejuruan
                                                 Jakarta Timur Provinsi DKI Jakarta</p>
                                         </div>
                                         <span class="cert-link-icon">↗</span>
@@ -359,8 +360,8 @@
                                         target="_blank" class="certificate-card">
                                         <div class="cert-icon">🖼️</div>
                                         <div class="cert-info">
-                                            <h4>Junior Operator Desain Grafis</h4>
-                                            <p>Lembaga Sertifikasi Profesi</p>
+                                            <h4 data-t="cert_graphic">Junior Operator Desain Grafis</h4>
+                                            <p data-t="cert_lsp">Lembaga Sertifikasi Profesi</p>
                                         </div>
                                         <span class="cert-link-icon">↗</span>
                                     </a>
@@ -369,8 +370,8 @@
                                         target="_blank" class="certificate-card">
                                         <div class="cert-icon">🎓</div>
                                         <div class="cert-info">
-                                            <h4>Fasilitasi Pandu Literasi Digital Pendidikan Literasi Digital</h4>
-                                            <p>Pusat Pengembangan Literasi Digital</p>
+                                            <h4 data-t="cert_digilit">Fasilitasi Pandu Literasi Digital Pendidikan Literasi Digital</h4>
+                                            <p data-t="cert_digilit_center">Pusat Pengembangan Literasi Digital</p>
                                         </div>
                                         <span class="cert-link-icon">↗</span>
                                     </a>
@@ -382,28 +383,28 @@
 
                 <!-- hobi -->
                 <div class="bagian-profil">
-                    <h2 class="section-title">Minat & Hobi</h2>
+                    <h2 class="section-title" data-t="hobbies_title">Minat & Hobi</h2>
                     <div class="minat-grid">
 
                         <div class="minat-card">
                             <span class="minat-icon">💡</span>
-                            <h4>Belajar hal baru</h4>
-                            <p>Eksplorasi teknologi baru dan open source projects</p>
+                            <h4 data-t="hobby_learning">Belajar hal baru</h4>
+                            <p data-t="hobby_learning_desc">Eksplorasi teknologi baru dan open source projects</p>
                         </div>
                         <div class="minat-card">
                             <span class="minat-icon">🎥</span>
-                            <h4>Videography</h4>
-                            <p>Cinematography dan video production</p>
+                            <h4 data-t="hobby_video">Videography</h4>
+                            <p data-t="hobby_video_desc">Cinematography dan video production</p>
                         </div>
                         <div class="minat-card">
                             <span class="minat-icon">🎧</span>
-                            <h4>Mendengarkan Musik</h4>
-                            <p>Mendengarkan lagu favorit</p>
+                            <h4 data-t="hobby_music">Mendengarkan Musik</h4>
+                            <p data-t="hobby_music_desc">Mendengarkan lagu favorit</p>
                         </div>
                         <div class="minat-card">
                             <span class="minat-icon">🎸</span>
-                            <h4>Bermain Gitar Listrik</h4>
-                            <p>Memainkan riffs favorit</p>
+                            <h4 data-t="hobby_guitar">Bermain Gitar Listrik</h4>
+                            <p data-t="hobby_guitar_desc">Memainkan riffs favorit</p>
                         </div>
                     </div>
                 </div>
@@ -416,6 +417,8 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="src/js/data/translations.js"></script>
+    <script src="src/js/components/LanguageSwitch.js"></script>
     <script src="src/js/anim.js"></script>
 
 </body>

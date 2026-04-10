@@ -1,4 +1,5 @@
 // Deployment trigger: 2026-03-13
+const currentLang = () => localStorage.getItem('preferred-lang') || 'id';
 let portfolioDatabase = { categories: [], projects: [] };
 
 async function loadPortfolioData() {
@@ -31,11 +32,17 @@ function renderCategories() {
 
         const card = document.createElement('div');
         card.className = 'playlist-card';
-        card.onclick = () => openPlaylist(cat.id, cat.title, cat.description, cat.thumbnail, count);
+        const catTitle = currentLang() === 'en' && cat.title_en ? cat.title_en : cat.title;
+        const catDesc = currentLang() === 'en' && cat.description_en ? cat.description_en : cat.description;
+        
+        card.onclick = () => openPlaylist(cat.id, catTitle, catDesc, cat.thumbnail, count);
+        const title = currentLang() === 'en' && cat.title_en ? cat.title_en : cat.title;
+        const countLabel = getT('worksCount');
+
         card.innerHTML = `
             ${imageHtml}
-            <h3>${cat.title}</h3>
-            <p>${count} karya</p>
+            <h3>${title}</h3>
+            <p>${count} ${countLabel}</p>
         `;
         grid.appendChild(card);
     });
@@ -48,7 +55,7 @@ function openPlaylist(categoryId, title, desc, coverSrc, count) {
     document.getElementById('playlist-title').innerText = title;
     document.getElementById('playlist-desc').innerText = desc;
     document.getElementById('playlist-cover').src = coverSrc;
-    document.getElementById('playlist-count-label').innerText = count + ' karya';
+    document.getElementById('playlist-count-label').innerText = count + ' ' + getT('worksCount');
 
     const grid = document.getElementById('dynamic-grid');
     if (!grid) return;
@@ -65,7 +72,7 @@ function openPlaylist(categoryId, title, desc, coverSrc, count) {
     const filteredProjects = portfolioDatabase.projects.filter(p => p.categoryId === categoryId);
     
     if (filteredProjects.length === 0) {
-        grid.innerHTML = '<p style="color:#b3b3b3; grid-column: 1 / -1;">Belum ada karya di kategori ini.</p>';
+        grid.innerHTML = `<p style="color:#b3b3b3; grid-column: 1 / -1;">${getT('noWorks')}</p>`;
     } else {
         filteredProjects.forEach(proj => {
             const card = document.createElement('div');
@@ -79,9 +86,12 @@ function openPlaylist(categoryId, title, desc, coverSrc, count) {
             const tagClose = hasLink ? `</a>` : `</div>`;
             const cursorStyle = hasLink ? `cursor: pointer;` : `cursor: default;`;
 
-            const titleHtml = proj.title ? `<h3>${proj.title}</h3>` : '';
-            const descHtml = proj.description ? `<p>${proj.description}</p>` : '';
-            const isMediaOnly = !proj.title && !proj.description;
+            const title = currentLang() === 'en' && proj.title_en ? proj.title_en : proj.title;
+            const desc = currentLang() === 'en' && proj.description_en ? proj.description_en : proj.description;
+
+            const titleHtml = title ? `<h3>${title}</h3>` : '';
+            const descHtml = desc ? `<p>${desc}</p>` : '';
+            const isMediaOnly = !title && !desc;
             
             // logic kalo json pake costume aspect rasio, default 16:9
             const customRatio = proj.aspectRatio ? `aspect-ratio: ${proj.aspectRatio}; padding-bottom: 0; height: auto;` : '';
@@ -90,7 +100,7 @@ function openPlaylist(categoryId, title, desc, coverSrc, count) {
             card.innerHTML = `
                 ${tagOpen}
                     <div class="fluid-video-wrapper" style="${wrapperStyle}">
-                        <img src="${proj.thumbnail}" alt="${proj.title}" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="${proj.thumbnail}" alt="${title}" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     ${titleHtml}
                     ${descHtml}

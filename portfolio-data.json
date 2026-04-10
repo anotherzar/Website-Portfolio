@@ -3,25 +3,33 @@
         {
             "id": "animation",
             "title": "Animation",
+            "title_en": "Animation",
             "description": "Koleksi karya animasi 2D, rigging, dan motion graphics.",
+            "description_en": "Collection of 2D animation, rigging, and motion graphics.",
             "thumbnail": "src/assets/Thumbnails/animation-thumb.webp"
         },
         {
             "id": "video",
             "title": "Video",
+            "title_en": "Video",
             "description": "Proyek visual effects, CGI compositing, dan video editing.",
+            "description_en": "Visual effects, CGI compositing, and video editing projects.",
             "thumbnail": "src/assets/Thumbnails/Video-porto-thumb.webp"
         },
         {
             "id": "graphic-design",
             "title": "Graphic Design",
+            "title_en": "Graphic Design",
             "description": "Desain grafis, branding, logo, dan identitas visual.",
+            "description_en": "Graphic design, branding, logo, and visual identity.",
             "thumbnail": "src/assets/Thumbnails/design-thumb.webp"
         },
         {
             "id": "case-study",
             "title": "Case Study",
+            "title_en": "Case Study",
             "description": "Koleksi karya studi kasus.",
+            "description_en": "Case study work collection.",
             "thumbnail": "src/assets/Thumbnails/journals.webp"
         }
     ],
@@ -29,7 +37,9 @@
         {
             "categoryId": "animation",
             "title": "WIKA Sosialisasi Code of Conduct",
+            "title_en": "WIKA Code of Conduct Socialization",
             "description": "Sosialisasi Code of Conduct untuk PT Wijaya Karya - Animation",
+            "description_en": "Code of Conduct Socialization for PT Wijaya Karya - Animation",
             "link": "https://youtu.be/hYjwTqMC338?si=nji8kjVqYQuYBSEe",
             "thumbnail": "src/assets/Thumbnails/COC_wika.webp"
         },
@@ -234,6 +244,7 @@
             "categoryId": "video",
             "title": "Formadiksi KIPK",
             "description": "Video Promosi Paslon",
+            "description_en": "Candidate Promotion Video",
             "link": "https://drive.google.com/file/d/1RIGLSdPdbWF1tm5q0jH4YW6drOW__Efw/view?usp=sharing",
             "thumbnail": "src/assets/portfolio/video/formadiksi-kipk.webp"
         }
