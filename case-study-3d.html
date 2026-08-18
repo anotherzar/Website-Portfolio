@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="3D Architectural Showcase Case Study - Zar's Portfolio">Studi Kasus Visualisasi 3D Hunian - Zar's Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;🎬&lt;/text&gt;&lt;/svg&gt;">
+    
+    <link rel="prefetch" href="index.html">
+    <link rel="prefetch" href="portfolio.html">
+    <link rel="prefetch" href="about.html">
+    <link rel="prefetch" href="contact.html">
+
+    <link rel="stylesheet" href="src/style/global.css">
+    <link rel="stylesheet" href="src/style/pattern-margin.css">
+    <link rel="stylesheet" href="src/style/case-study.css">
+    <link rel="stylesheet" href="src/style/translate.css">
+</head>
+
+<body>
+    <div class="pattern-area"></div>
+
+    <navbar-component></navbar-component>
+
+    <main class="case-main">
+        <div class="case-container">
+            <!-- Back Link -->
+            <a href="portfolio.html" class="back-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                <span data-en="Back to Portfolio">Kembali ke Portofolio</span>
+            </a>
+
+            <!-- Case Header -->
+            <header class="case-header">
+                <div class="case-tags">
+                    <span class="case-tag">3D Modeling</span>
+                    <span class="case-tag">Cycles Rendering</span>
+                    <span class="case-tag">Architectural Visualization</span>
+                    <span class="case-tag">Asset Optimization</span>
+                </div>
+                <h1 data-en="3D Residential Visualization & Rendering">Pemodelan & Visualisasi 3D Hunian Modern</h1>
+            </header>
+
+            <!-- Specs Box -->
+            <div class="specs-box">
+                <div class="spec-item">
+                    <h4 data-en="Role">Peran</h4>
+                    <p data-en="3D Environment Artist">3D Environment Artist</p>
+                </div>
+                <div class="spec-item">
+                    <h4 data-en="Timeline">Garis Waktu</h4>
+                    <p data-en="Dec 2025">Des 2025</p>
+                </div>
+                <div class="spec-item">
+                    <h4 data-en="Client / Course">Klien / Mata Kuliah</h4>
+                    <p data-en="3D Modeling (PNJ)">Pemodelan 3D (PNJ)</p>
+                </div>
+                <div class="spec-item">
+                    <h4 data-en="Software Used">Software Utama</h4>
+                    <p>Blender, Cycles Engine</p>
+                </div>
+            </div>
+
+            <!-- Overview Section -->
+            <section class="case-section">
+                <h2 data-en="Overview">Ringkasan Proyek</h2>
+                <p data-en="This case study showcases the modeling and photorealistic rendering of a modern residential estate. Designed in detail from the exterior structure to various interior living spaces, the project demonstrates precision in lighting, material texturing, and asset layout. Cycles render engine was utilized to generate cinematic shadows and realistic reflections.">
+                    Studi kasus ini memamerkan perancangan dan rendering fotorealistik dari sebuah hunian modern. Dirancang secara mendetail mulai dari arsitektur luar ruang (eksterior) hingga tata ruang dalam (interior) seperti ruang tamu, kamar tidur, dapur, dan kamar mandi. Proyek ini memprioritaskan akurasi pencahayaan, detail tekstur material, dan penataan tata letak objek menggunakan mesin render Cycles di Blender.
+                </p>
+            </section>
+
+            <!-- Interactive Showcase Section -->
+            <section class="case-section">
+                <h2 data-en="Interactive Render Showcase">Galeri Render Interaktif</h2>
+                <p data-en="Explore the final render angles by switching between different spaces using the tabs below.">
+                    Eksplorasi hasil rendering final di bawah ini dengan berpindah kategori ruangan menggunakan tombol navigasi.
+                </p>
+
+                <!-- Tabs Nav -->
+                <div class="tabs-nav">
+                    <button class="tab-btn active" onclick="switchTab('exterior')" data-en="Exterior">Eksterior</button>
+                    <button class="tab-btn" onclick="switchTab('living')" data-en="Living Room">Ruang Tamu</button>
+                    <button class="tab-btn" onclick="switchTab('bedroom')" data-en="Bedroom">Kamar Tidur</button>
+                    <button class="tab-btn" onclick="switchTab('kitchen')" data-en="Kitchen & Bath">Dapur & Toilet</button>
+                </div>
+
+                <!-- Tab Contents: Exterior -->
+                <div id="exterior" class="tab-content active">
+                    <div class="case-grid-images">
+                        <div class="case-grid-item">
+                            <img src="Case_Study/UAS_3D/RENDER_FINAL/EXTERIOR/Exterior_View_1.webp" alt="Exterior View 1" loading="lazy">
+                        </div>
+                        <div class="case-grid-item">
+                            <img src="Case_Study/UAS_3D/RENDER_FINAL/EXTERIOR/Exterior_View_2.webp" alt="Exterior View 2" loading="lazy">
+                        </div>
+                        <div class="case-grid-item">
+                            <img src="Case_Study/UAS_3D/RENDER_FINAL/EXTERIOR/Exterior_View_3.webp" alt="Exterior View 3" loading="lazy">
+                        </div>
+                        <div class="case-grid-item">
+                            <img src="Case_Study/UAS_3D/RENDER_FINAL/EXTERIOR/Exterior_View_4.webp" alt="Exterior View 4" loading="lazy">
+                        </div>
+                        <div class="case-grid-item">
+                            <img src="Case_Study/UAS_3D/RENDER_FINAL/EXTERIOR/Exterior_View_5.webp" alt="Exterior View 5" loading="lazy">
+                        </div>
+                        <div class="case-grid-item">
+                            <img src="Case_Study/UAS_3D/RENDER_FINAL/EXTERIOR/Exterior_View_6.webp" alt="Exterior View 6" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Contents: Living Room -->
+                <div id="living" class="tab-content">
+                    <div class="case-grid-images">
+                        <div class="case-grid-item">
+                            <img src="Case_Study/UAS_3D/RENDER_FINAL/INTERIOR/Ruang_Tamu/Ruang_Tamu_View_1.webp" alt="Living Room View 1" loading="lazy">
+                        </div>
+                        <div class="case-grid-item">
+                            <img src="Case_Study/UAS_3D/RENDER_FINAL/INTERIOR/Ruang_Tamu/Ruang_Tamu_View_2.webp" alt="Living Room View 2" loading="lazy">
+                        </div>
+                        <div class="case-grid-item">
+                            <img src="Case_Study/UAS_3D/RENDER_FINAL/INTERIOR/Ruang_Tamu/Ruang_Tamu_View_3.webp" alt="Living Room View 3" loading="lazy">
+                        </div>
+                        <div class="case-grid-item">
+                            <img src="Case_Study/UAS_3D/RENDER_FINAL/INTERIOR/Ruang_Tamu/Ruang_Tamu_View_4.webp" alt="Living Room View 4" loading="lazy">
+                        </div>
+                        <div class="case-grid-item">
+                            <img src="Case_Study/UAS_3D/RENDER_FINAL/INTERIOR/Ruang_Tamu/Ruang_Tamu_View_5.webp" alt="Living Room View 5" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Contents: Bedroom -->
+                <div id="bedroom" class="tab-content">
+                    <div class="case-grid-images">
+                        <div class="case-grid-item">
+                            <img src="Case_Study/UAS_3D/RENDER_FINAL/INTERIOR/KAMAR_1&2/Kamar_View_1.webp" alt="Bedroom View 1" loading="lazy">
+                        </div>
+                        <div class="case-grid-item">
+                            <img src="Case_Study/UAS_3D/RENDER_FINAL/INTERIOR/KAMAR_1&2/Kamar_View_2.webp" alt="Bedroom View 2" loading="lazy">
+                        </div>
+                        <div class="case-grid-item">
+                            <img src="Case_Study/UAS_3D/RENDER_FINAL/INTERIOR/KAMAR_1&2/Kamar_View_3.webp" alt="Bedroom View 3" loading="lazy">
+                        </div>
+                        <div class="case-grid-item">
+                            <img src="Case_Study/UAS_3D/RENDER_FINAL/INTERIOR/KAMAR_1&2/Kamar_View_4.webp" alt="Bedroom View 4" loading="lazy">
+                        </div>
+                        <div class="case-grid-item">
+                            <img src="Case_Study/UAS_3D/RENDER_FINAL/INTERIOR/KAMAR_1&2/Kamar_View_5.webp" alt="Bedroom View 5" loading="lazy">
+                        </div>
+                        <div class="case-grid-item">
+                            <img src="Case_Study/UAS_3D/RENDER_FINAL/INTERIOR/KAMAR_1&2/Kamar_View_6.webp" alt="Bedroom View 6" loading="lazy">
+                        </div>
+                        <div class="case-grid-item">
+                            <img src="Case_Study/UAS_3D/RENDER_FINAL/INTERIOR/KAMAR_1&2/Kamar_View_7.webp" alt="Bedroom View 7" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Contents: Kitchen & Bath -->
+                <div id="kitchen" class="tab-content">
+                    <div class="case-grid-images">
+                        <div class="case-grid-item">
+                            <img src="Case_Study/UAS_3D/RENDER_FINAL/INTERIOR/Dapur/Dapur_View_1.webp" alt="Kitchen View 1" loading="lazy">
+                        </div>
+                        <div class="case-grid-item">
+                            <img src="Case_Study/UAS_3D/RENDER_FINAL/INTERIOR/Dapur/Dapur_View_2.webp" alt="Kitchen View 2" loading="lazy">
+                        </div>
+                        <div class="case-grid-item">
+                            <img src="Case_Study/UAS_3D/RENDER_FINAL/INTERIOR/Dapur/Indomie.webp" alt="Detail Indomie Pack Render" loading="lazy">
+                        </div>
+                        <div class="case-grid-item">
+                            <img src="Case_Study/UAS_3D/RENDER_FINAL/INTERIOR/Kamar_Mandi/Kamar_Mandi_View_1.webp" alt="Bathroom View 1" loading="lazy">
+                        </div>
+                        <div class="case-grid-item">
+                            <img src="Case_Study/UAS_3D/RENDER_FINAL/INTERIOR/Kamar_Mandi/Kamar_Mandi_View_2.webp" alt="Bathroom View 2" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer-component></footer-component>
+
+    <script>
+        function switchTab(tabId) {
+            // Remove active classes from buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            // Remove active classes from tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+
+            // Find current clicked button and add active class
+            event.currentTarget.classList.add('active');
+
+            // Find corresponding content and add active class
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="src/js/data/translations.js"></script>
+    <script src="src/js/components/LanguageSwitch.js"></script>
+    <script src="src/js/components/NavbarComponent.js"></script>
+    <script src="src/js/components/FooterComponent.js"></script>
+    <script src="src/js/anim.js"></script>
+</body>
+
+</html>

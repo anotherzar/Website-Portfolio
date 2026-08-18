@@ -21,14 +21,7 @@
         <div id="loading-text" data-t="loading">Halo</div>
     </div>
     <div class="pattern-area"></div>
-    <header>
-        <nav class="nav">
-            <a href="index.html" data-t="nav_home">Home</a>
-            <a href="about.html" data-t="nav_about">About</a>
-            <a href="portfolio.html" data-t="nav_portfolio">Portofolio</a>
-            <a href="contact.html" data-t="nav_contact">Contact</a>
-        </nav>
-    </header>
+    <navbar-component></navbar-component>
 
     <main>
         <div class="content-wrapper">
@@ -72,8 +65,9 @@
                     <div class="skill-grid">
                         <div class="skill-card">
                             <div class="skill-preview">
-                                <video src="src/assets/videos/mograph.mp4" autoplay muted loop playsinline
-                                    preload="auto"></video>
+                                <video autoplay muted loop playsinline webkit-playsinline preload="auto">
+                                    <source src="src/assets/videos/mograph.mp4" type="video/mp4">
+                                </video>
                             </div>
                             <div class="skill-info">
                                 <h3>Motion Design</h3>
@@ -83,8 +77,9 @@
 
                         <div class="skill-card">
                             <div class="skill-preview">
-                                <video src="src/assets/videos/vfx.mp4" autoplay muted loop playsinline
-                                    preload="auto"></video>
+                                <video autoplay muted loop playsinline webkit-playsinline preload="auto">
+                                    <source src="src/assets/videos/vfx.mp4" type="video/mp4">
+                                </video>
                             </div>
                             <div class="skill-info">
                                 <h3>VFX & Video Editing</h3>
@@ -94,8 +89,9 @@
 
                         <div class="skill-card">
                             <div class="skill-preview">
-                                <video src="src/assets/videos/design.mp4" autoplay muted loop playsinline
-                                    preload="auto"></video>
+                                <video autoplay muted loop playsinline webkit-playsinline preload="auto">
+                                    <source src="src/assets/videos/design.mp4" type="video/mp4">
+                                </video>
                             </div>
                             <div class="skill-info">
                                 <h3>Branding & Visual Identity</h3>
@@ -105,8 +101,9 @@
 
                         <div class="skill-card">
                             <div class="skill-preview">
-                                <video src="src/assets/videos/ui_anim.mp4" autoplay muted loop playsinline
-                                    preload="auto"></video>
+                                <video autoplay muted loop playsinline webkit-playsinline preload="auto">
+                                    <source src="src/assets/videos/ui_anim.mp4" type="video/mp4">
+                                </video>
                             </div>
                             <div class="skill-info">
                                 <h3>UI/UX & Web Animation</h3>
@@ -123,11 +120,11 @@
             <faq-component data-t-title="faq_title"></faq-component>
         </div>
     </main>
-    <footer style="z-index: 1000; margin-top: 0px;">
-        <p>made with &hearts; by &copy; 2025 zarvx_</p>
-    </footer>
+    <footer-component></footer-component>
     <script src="src/js/data/translations.js"></script>
     <script src="src/js/components/LanguageSwitch.js"></script>
+    <script src="src/js/components/NavbarComponent.js"></script>
+    <script src="src/js/components/FooterComponent.js"></script>
     <script src="src/js/components/ClientMarquee.js"></script>
     <script src="src/js/components/FaqComponent.js"></script>
     <script src="src/js/index.js"></script>

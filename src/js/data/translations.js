@@ -10,6 +10,9 @@ const translationsData = {
         "no_works": "Belum ada karya di kategori ini.",
         "back_to_cats": "Kembali ke Kategori",
         "back_to_top": "Kembali ke Atas",
+        "footer_desc": "Motion graphics, VFX, dan desain visual modern yang dirancang untuk memberikan dampak visual maksimal.",
+        "footer_links_title": "Navigasi",
+        "footer_contact_title": "Hubungi Saya",
 
         // Index
         "loading": "Halo",
@@ -27,7 +30,7 @@ const translationsData = {
 
         // About
         "about_title": "Tentang Saya",
-        "bio_p1": "Halo! Saya Zar, seorang Motion Designer & Visual Artist yang berbasis di Jakarta. Saya memiliki *passion* besar dalam menciptakan narasi visual yang dinamis dan berkesan.",
+        "bio_p1": "Halo! Saya Zar, seorang Motion Designer & Visual Artist yang berbasis di Jakarta. Saya memiliki passion besar dalam menciptakan narasi visual yang dinamis dan berkesan.",
         "bio_p2": "Berawal dari ketertarikan pada bagaimana sebuah gambar bisa bergerak dan bercerita, saya mulai mendalami dunia animasi dan editing sejak duduk di bangku SMK. Perjalanan ini membawa saya untuk mengeksplorasi berbagai disiplin visual, mulai dari video production, 3D modeling, hingga UI/UX design.",
         "bio_p3": "Saat ini, saya aktif mengerjakan proyek-proyek kreatif baik secara personal maupun profesional, sambil terus memperdalam kemampuan teknis saya di bidang teknologi multimedia.",
         
@@ -37,10 +40,17 @@ const translationsData = {
         "tech_stack_title": "Tech Stack Saya",
         
         "experience_title": "Pengalaman",
+        "exp_pkm_title": "Pengabdian Kepada Masyarakat",
+        "exp_pkm_company": "Skema Lektor",
+        "exp_pkm_desc": "Bertanggung jawab dalam penggarapan animasi 2D karakter untuk proyek Pengabdian Kepada Masyarakat (Skema Lektor). Berfokus pada animasi pergerakan visual dan motion karakter 2D berbasis aset yang telah disediakan oleh tim.",
+        "exp_kipfest_desc": "Bertanggung jawab sebagai Staff Divisi HPDD dalam kepanitiaan KIP Kuliah Festival 2026 PNJ, sekaligus merancang dan membangun platform website resmi KIPK Festival.",
         "exp_online_editor_desc": "Berkesempatan bergabung dengan team Studio Titik Sembilan sebagai online editor untuk produksi music video. Mengerjakan post-production dan editing untuk project music video \"Untuk Kau Yang di Sana\" by For Revenge dan Stand Here Alone. Pengalaman bekerja dengan tim profesional dalam industri musik Indonesia.",
-        "exp_web_dev_desc": "Mengerjakan berbagai project web development menggunakan framework modern. Fokus pada responsive design dan motion design.",
+        "exp_web_dev_title_1": "Staff Divisi HPDD",
+        "exp_web_dev_title_2": "Staff Software Development",
+        "exp_web_dev_desc": "Belajar dan berkontribusi dalam perancangan serta pembuatan website full-stack di divisi Software Development.",
         "exp_3d_artist_desc": "Berkesempatan bergabung dengan team Orbit Universe Studio sebagai 3D Artist untuk mengerjakan project internal BUMN. Bertanggung jawab dalam pembuatan aset 3D, modeling, dan visualisasi untuk kebutuhan promosi dan presentasi corporate. Pengalaman bekerja dengan software 3D profesional dan pipeline production studio.",
         "exp_pr_intern_desc": "Melakukan magang di bagian Public Relations, membantu dokumentasi kegiatan perusahaan, pembuatan konten media sosial, dan editing video untuk keperluan promosi corporate. Pengalaman kerja di lingkungan profesional BUMN.",
+        "exp_poster_title": "Juara 3 Lomba Desain Poster",
         "exp_poster_desc": "Meraih prestasi Juara 3 dalam kompetisi desain poster tingkat se-Provinsi Jakarta yang diselenggarakan di Balaikota Jakarta. Kompetisi ini mempertandingkan kemampuan desain poster dari berbagai peserta se-Jakarta. Achievement yang membuktikan kemampuan dalam bidang desain grafis dan kreativitas visual.",
         "exp_motion_desc": "Bekerja sebagai motion graphics designer remote untuk berbagai klien. Spesialisasi dalam motion design, video editing menggunakan After Effects dan Premiere Pro, serta pembuatan konten visual untuk media sosial dan promosi digital.",
         
@@ -115,6 +125,9 @@ const translationsData = {
         "no_works": "No works available in this category yet.",
         "back_to_cats": "Back to Categories",
         "back_to_top": "Back to Top",
+        "footer_desc": "Motion graphics, VFX, and modern visual design crafted to deliver maximum visual impact.",
+        "footer_links_title": "Navigation",
+        "footer_contact_title": "Get in Touch",
 
         // Index
         "loading": "Hello",
@@ -142,10 +155,16 @@ const translationsData = {
         "tech_stack_title": "My Tech Stack",
         
         "experience_title": "Experience",
+        "exp_pkm_title": "Community Service",
+        "exp_pkm_company": "Lektor Scheme",
+        "exp_pkm_desc": "Responsible for 2D character animation production for the Community Service program (Lektor Scheme). Focused on visual motion design and animating 2D character assets provided by the team.",
+        "exp_kipfest_desc": "Served as HPDD Division Staff for the KIP Kuliah Festival 2026 PNJ committee, while designing and building the official KIPK Festival website platform.",
         "exp_online_editor_desc": "Had the opportunity to join the Studio Titik Sembilan team as an online editor for music video production. Worked on post-production and editing for the music video project \"Untuk Kau Yang di Sana\" by For Revenge and Stand Here Alone. Experience working with a professional team in the Indonesian music industry.",
-        "exp_web_dev_desc": "Working on various web development projects using modern frameworks. Focused on responsive design and motion design.",
+        "exp_web_dev_title": "Software Development Staff",
+        "exp_web_dev_desc": "Learned and contributed to designing and building full-stack websites as part of the Software Development division.",
         "exp_3d_artist_desc": "Had the opportunity to join the Orbit Universe Studio team as a 3D Artist to work on internal SOE projects. Responsible for creating 3D assets, modeling, and visualization for corporate promotion and presentation needs. Experience working with professional 3D software and studio production pipelines.",
         "exp_pr_intern_desc": "Interned in the Public Relations department, assisting in documenting company activities, creating social media content, and video editing for corporate promotion purposes. Work experience in a professional SOE environment.",
+        "exp_poster_title": "3rd Place Poster Design Competition",
         "exp_poster_desc": "Achieved 3rd Place in a provincial-level poster design competition held at Jakarta City Hall. This competition contested poster design skills of various participants across Jakarta. An achievement that proves capabilities in graphic design and visual creativity.",
         "exp_motion_desc": "Working as a remote motion graphics designer for various clients. Specialized in motion design, video editing using After Effects and Premiere Pro, as well as creating visual content for social media and digital promotion.",
         

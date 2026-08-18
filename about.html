@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tentang Saya - Zar's Portfolio</title>
     <title>Portofolio - Zar's Portfolio</title>
-    <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;🎬&lt;/text&gt;&lt;/svg&gt;">
+    <link rel="icon"
+        href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;🎬&lt;/text&gt;&lt;/svg&gt;">
     <link rel="prefetch" href="index.html">
     <link rel="prefetch" href="portfolio.html">
     <link rel="prefetch" href="contact.html">
@@ -24,14 +25,7 @@
 <body>
     <div class="pattern-area"></div>
 
-    <header>
-        <nav class="nav">
-            <a href="index.html" data-t="nav_home">Home</a>
-            <a href="about.html" data-t="nav_about">About</a>
-            <a href="portfolio.html" data-t="nav_portfolio">Portofolio</a>
-            <a href="contact.html" data-t="nav_contact">Contact</a>
-        </nav>
-    </header>
+    <navbar-component></navbar-component>
 
     <main class="halaman-profil">
         <div class="content-wrapper">
@@ -53,10 +47,12 @@
                 <!-- Bio Section -->
                 <div class="bagian-profil bagian-bio">
                     <h2 class="section-title" data-t="about_title">Tentang Saya</h2>
-                    <p class="teks-bio" data-en="Hello! I'm Fazar, a D4 Digital Multimedia Technology student at Jakarta State Polytechnic. Since 2021, I've been working as a remote Motion Graphics Designer. I have collaborated with Sony Music for music video post-production and worked as a 3D Artist at Orbit Universe Studio. I won 3rd place in a poster design competition in Jakarta Province. I also enjoy playing electric guitar and listening to music for creative inspiration.">
+                    <p class="teks-bio"
+                        data-en="Hello! I'm Fazar, a D4 Digital Multimedia Technology student at Jakarta State Polytechnic. Since 2021, I've been working as a remote Motion Graphics Designer. I have collaborated with Sony Music for music video post-production and worked as a 3D Artist at Orbit Universe Studio. I won 3rd place in a poster design competition in Jakarta Province. I also enjoy playing electric guitar and listening to music for creative inspiration.">
                         Halo! Saya Fazar, mahasiswa D4 Teknik Multimedia Digital di Politeknik Negeri Jakarta.
                         Sejak 2021, saya bekerja sebagai Motion Graphics Designer secara remote. Pernah berkolaborasi
-                        dengan Sony Music untuk post-produksi music video (MV) dan sebagai 3D Artist di Orbit Universe Studio. Meraih Juara
+                        dengan Sony Music untuk post-produksi music video (MV) dan sebagai 3D Artist di Orbit Universe
+                        Studio. Meraih Juara
                         3 lomba desain poster tingkat Provinsi Jakarta. Saya juga gemar bermain gitar listrik dan
                         mendengarkan
                         musik untuk mencari inspirasi dan ide kreatif.
@@ -70,7 +66,8 @@
                         <div class="mbti-badge">INTJ-T</div>
                         <div class="mbti-details">
                             <h3>The Architect</h3>
-                            <p data-t="mbti_desc">Strategic thinker dengan visi jangka panjang. Analytical, independent, dan selalu driven
+                            <p data-t="mbti_desc">Strategic thinker dengan visi jangka panjang. Analytical, independent,
+                                dan selalu driven
                                 untuk continuous improvement. Passionate dalam problem-solving dan mengeksplorasi
                                 ide-ide kompleks.</p>
                         </div>
@@ -190,9 +187,57 @@
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
-                                <h3 class="timeline-title">Online Editor</h3>
-                                <p class="timeline-company">Studio Titik Sembilan & Sony Music</p>
-                                <p class="timeline-period">2025</p>
+                                <div class="timeline-header">
+                                    <div class="timeline-logo">
+                                        <img src="src/assets/Logo/Logo_Politeknik_Negeri_Jakarta.jpg" alt="Logo Politeknik Negeri Jakarta">
+                                    </div>
+                                    <div class="timeline-details">
+                                        <h3 class="timeline-title">Staff Animator 2D</h3>
+                                        <p class="timeline-company">Pengabdian Kepada Masyarakat Skema Lektor</p>
+                                        <p class="timeline-period">On Going</p>
+                                    </div>
+                                </div>
+                                <p class="timeline-desc" data-t="exp_pkm_desc">
+                                    Bertanggung jawab dalam penggarapan animasi 2D karakter untuk proyek Pengabdian Kepada Masyarakat (Skema Lektor).
+                                    Berfokus pada animasi pergerakan visual dan motion karakter 2D berbasis aset yang telah disediakan oleh tim.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <div class="timeline-logo">
+                                        <img src="src/assets/Logo/Logo_KIPFEST2026.png" alt="Logo KIPK Festival">
+                                    </div>
+                                    <div class="timeline-details">
+                                        <h3 class="timeline-title" >Staff Divisi HPDD</h3>
+                                        <p class="timeline-company">KIP Kuliah Festival 2026 PNJ</p>
+                                        <p class="timeline-period">2026</p>
+                                    </div>
+                                </div>
+                                <p class="timeline-desc" data-t="exp_kipfest_desc">
+                                    Bertanggung jawab sebagai Staff Divisi HPDD dalam kepanitiaan KIP Kuliah Festival 2026 PNJ, sekaligus merancang dan membangun platform website resmi KIPK Festival.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <div class="timeline-logo">
+                                        <img src="src/assets/images/Studio_titikSembilan.webp"
+                                            alt="Studio Titik Sembilan Logo">
+                                    </div>
+                                    <div class="timeline-details">
+                                        <h3 class="timeline-title">Online Editor</h3>
+                                        <p class="timeline-company">Studio Titik Sembilan & Sony Music</p>
+                                        <p class="timeline-period">2025</p>
+                                    </div>
+                                </div>
                                 <p class="timeline-desc" data-t="exp_online_editor_desc">
                                     Berkesempatan bergabung dengan team Studio Titik Sembilan sebagai online editor
                                     untuk
@@ -209,12 +254,21 @@
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
-                                <h3 class="timeline-title">Web Development Projects</h3>
-                                <p class="timeline-company">Academic & Personal Projects</p>
-                                <p class="timeline-period" data-t="period_present">2024 - Sekarang</p>
+                                <div class="timeline-header">
+                                    <div class="timeline-logo">
+                                        <img src="https://csc-pnj.vercel.app/logo-csc.png"
+                                            alt="Computer Student Club PNJ Logo">
+                                    </div>
+                                    <div class="timeline-details">
+                                        <h3 class="timeline-title" data-t="exp_web_dev_title">Staff Software Development
+                                        </h3>
+                                        <p class="timeline-company">Computer Student Club PNJ</p>
+                                        <p class="timeline-period">2025</p>
+                                    </div>
+                                </div>
                                 <p class="timeline-desc" data-t="exp_web_dev_desc">
-                                    Mengerjakan berbagai project web development menggunakan framework modern. Fokus
-                                    pada responsive design dan motion design.
+                                    Mempelajari dan membuat projek website development fullstack menggunakan Framework
+                                    Java Script.
                                 </p>
                             </div>
                         </div>
@@ -222,9 +276,17 @@
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
-                                <h3 class="timeline-title">3D Artist</h3>
-                                <p class="timeline-company">Orbit Universe Studio</p>
-                                <p class="timeline-period">2024</p>
+                                <div class="timeline-header">
+                                    <div class="timeline-logo">
+                                        <img src="https://www.orbituniverse.id/logo/Logo_Orbit_White.png"
+                                            alt="Orbit Universe Studio Logo">
+                                    </div>
+                                    <div class="timeline-details">
+                                        <h3 class="timeline-title">3D Artist</h3>
+                                        <p class="timeline-company">Orbit Universe Studio</p>
+                                        <p class="timeline-period">2024</p>
+                                    </div>
+                                </div>
                                 <p class="timeline-desc" data-t="exp_3d_artist_desc">
                                     Berkesempatan bergabung dengan team Orbit Universe Studio sebagai 3D Artist untuk
                                     mengerjakan project internal BUMN. Bertanggung jawab dalam pembuatan aset 3D,
@@ -239,9 +301,18 @@
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
-                                <h3 class="timeline-title">Public Relations Intern</h3>
-                                <p class="timeline-company">PT Wijaya Karya Industri & Konstruksi</p>
-                                <p class="timeline-period" data-t="period_prakerin">2023 Praktik Kerja Industri (SMK)</p>
+                                <div class="timeline-header">
+                                    <div class="timeline-logo">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Wijaya_Karya.svg/3840px-Wijaya_Karya.svg.png"
+                                            alt="Wika Logo">
+                                    </div>
+                                    <div class="timeline-details">
+                                        <h3 class="timeline-title">Public Relations Intern</h3>
+                                        <p class="timeline-company">PT Wijaya Karya Industri & Konstruksi</p>
+                                        <p class="timeline-period" data-t="period_prakerin">2023 Praktik Kerja Industri
+                                            (SMK)</p>
+                                    </div>
+                                </div>
                                 <p class="timeline-desc" data-t="exp_pr_intern_desc">
                                     Melakukan magang di bagian Public Relations, membantu dokumentasi kegiatan
                                     perusahaan,
@@ -254,16 +325,23 @@
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
-                                <h3 class="timeline-title" data-t="exp_poster_title">Juara 3 Lomba Desain Poster</h3>
-                                <p class="timeline-company" data-t="exp_poster_company">Balaikota Jakarta - Kompetisi Tingkat Provinsi</p>
-                                <p class="timeline-period">2022</p>
+                                <div class="timeline-header">
+                                    <div class="timeline-logo">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Coat_of_arms_of_Jakarta.svg/500px-Coat_of_arms_of_Jakarta.svg.png"
+                                            alt="Logo DKI Jakarta">
+                                    </div>
+                                    <div class="timeline-details">
+                                        <h3 class="timeline-title" data-t="exp_poster_title">Juara 3 Lomba Desain Poster</h3>
+                                        <p class="timeline-company" data-t="exp_poster_company">Balaikota Jakarta -
+                                            Kompetisi Tingkat Provinsi</p>
+                                        <p class="timeline-period">2022</p>
+                                    </div>
+                                </div>
                                 <p class="timeline-desc" data-t="exp_poster_desc">
                                     Meraih prestasi Juara 3 dalam kompetisi desain poster tingkat se-Provinsi Jakarta
-                                    yang
-                                    diselenggarakan di Balaikota Jakarta. Kompetisi ini mempertandingkan kemampuan
+                                    yang diselenggarakan di Balaikota Jakarta. Kompetisi ini mempertandingkan kemampuan
                                     desain poster dari berbagai peserta se-Jakarta. Achievement yang membuktikan
-                                    kemampuan dalam
-                                    bidang desain grafis dan kreativitas visual.
+                                    kemampuan dalam bidang desain grafis dan kreativitas visual.
                                 </p>
                             </div>
                         </div>
@@ -271,10 +349,18 @@
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
-                                <h3 class="timeline-title">Motion Graphics Designer</h3>
-                                <p class="timeline-company">Freelance / Remote Work</p>
-                                <p class="timeline-period" data-en="2021 - Present">2021 - Sekarang</p>
-                                <p class="timeline-desc" data-en="Working as a remote motion graphics designer for various clients. Specialized in motion design, video editing using After Effects and Premiere Pro, as well as creating visual content for social media and digital promotion.">
+                                <div class="timeline-header">
+                                    <div class="timeline-logo">
+                                        <img src="src/assets/images/company-placeholder.svg" alt="Company Logo">
+                                    </div>
+                                    <div class="timeline-details">
+                                        <h3 class="timeline-title">Motion Graphics Designer</h3>
+                                        <p class="timeline-company">Freelance / Remote Work</p>
+                                        <p class="timeline-period" data-en="2021 - Present">2021 - Sekarang</p>
+                                    </div>
+                                </div>
+                                <p class="timeline-desc"
+                                    data-en="Working as a remote motion graphics designer for various clients. Specialized in motion design, video editing using After Effects and Premiere Pro, as well as creating visual content for social media and digital promotion.">
                                     Bekerja sebagai motion graphics designer remote untuk berbagai klien.
                                     Spesialisasi dalam motion design, video editing menggunakan After Effects dan
                                     Premiere Pro,
@@ -328,7 +414,8 @@
                                         class="certificate-card">
                                         <div class="cert-icon">💻</div>
                                         <div class="cert-info">
-                                            <h4 data-t="cert_logic">Pengenalan ke Logika Pemrograman (Programming Logic 101)</h4>
+                                            <h4 data-t="cert_logic">Pengenalan ke Logika Pemrograman (Programming Logic
+                                                101)</h4>
                                             <p>Dicoding Indonesia</p>
                                         </div>
                                         <span class="cert-link-icon">↗</span>
@@ -348,9 +435,11 @@
                                         target="_blank" class="certificate-card">
                                         <div class="cert-icon">🎨</div>
                                         <div class="cert-info">
-                                            <h4 data-t="cert_multimedia">Pelatihan Peningkatan Kompetensi Peserta Didik SMK Bidang Keahlian
+                                            <h4 data-t="cert_multimedia">Pelatihan Peningkatan Kompetensi Peserta Didik
+                                                SMK Bidang Keahlian
                                                 Multimedia</h4>
-                                            <p data-t="cert_multimedia_school">Pusat Pengembangan Kompetensi Pendidik, Tenaga Kependidikan Dan Kejuruan
+                                            <p data-t="cert_multimedia_school">Pusat Pengembangan Kompetensi Pendidik,
+                                                Tenaga Kependidikan Dan Kejuruan
                                                 Jakarta Timur Provinsi DKI Jakarta</p>
                                         </div>
                                         <span class="cert-link-icon">↗</span>
@@ -370,7 +459,8 @@
                                         target="_blank" class="certificate-card">
                                         <div class="cert-icon">🎓</div>
                                         <div class="cert-info">
-                                            <h4 data-t="cert_digilit">Fasilitasi Pandu Literasi Digital Pendidikan Literasi Digital</h4>
+                                            <h4 data-t="cert_digilit">Fasilitasi Pandu Literasi Digital Pendidikan
+                                                Literasi Digital</h4>
                                             <p data-t="cert_digilit_center">Pusat Pengembangan Literasi Digital</p>
                                         </div>
                                         <span class="cert-link-icon">↗</span>
@@ -412,13 +502,13 @@
         </div>
     </main>
 
-    <footer>
-        <p>made with &hearts; by &copy; 2025 zarvx_</p>
-    </footer>
+    <footer-component></footer-component>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="src/js/data/translations.js"></script>
     <script src="src/js/components/LanguageSwitch.js"></script>
+    <script src="src/js/components/NavbarComponent.js"></script>
+    <script src="src/js/components/FooterComponent.js"></script>
     <script src="src/js/anim.js"></script>
 
 </body>

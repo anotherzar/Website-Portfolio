@@ -77,3 +77,71 @@ slider.addEventListener('mousemove', (e) => {
     const walk = (x - startX) * 1.2;
     slider.scrollLeft = scrollLeft - walk;
 });
+
+// Safari & iOS Video Autoplay / Play Button Fix
+const initAndPlayVideos = () => {
+    const videos = document.querySelectorAll('.skill-card video');
+    
+    videos.forEach(video => {
+        // Explicitly set muted and playsinline programmatically for Safari support
+        video.muted = true;
+        video.playsInline = true;
+        video.setAttribute('muted', '');
+        video.setAttribute('playsinline', '');
+        
+        const attemptPlay = () => {
+            const playPromise = video.play();
+            if (playPromise !== undefined) {
+                playPromise.catch(() => {
+                    // Autoplay was prevented by browser policy (e.g., Low Power Mode or Safari settings)
+                    // We set up listeners to play as soon as the user interacts with the page
+                    const playOnInteraction = () => {
+                        video.play().then(cleanUp).catch(() => {});
+                    };
+                    
+                    const cleanUp = () => {
+                        document.removeEventListener('click', playOnInteraction);
+                        document.removeEventListener('touchstart', playOnInteraction);
+                        document.removeEventListener('scroll', playOnInteraction);
+                    };
+                    
+                    document.addEventListener('click', playOnInteraction, { passive: true });
+                    document.addEventListener('touchstart', playOnInteraction, { passive: true });
+                    document.addEventListener('scroll', playOnInteraction, { passive: true });
+                });
+            }
+        };
+
+        // Try playing immediately
+        attemptPlay();
+
+        // Extra trigger: Try playing when the parent card is hovered/touched
+        const card = video.closest('.skill-card');
+        if (card && !card.dataset.hasVideoListeners) {
+            card.dataset.hasVideoListeners = 'true';
+            card.addEventListener('mouseenter', () => {
+                if (video.paused) {
+                    video.play().catch(() => {});
+                }
+            });
+            card.addEventListener('touchstart', () => {
+                if (video.paused) {
+                    video.play().catch(() => {});
+                }
+            }, { passive: true });
+        }
+    });
+};
+
+// Run on DOMContentLoaded or immediately if already loaded
+if (document.readyState === 'loading') {
+    document.addEventListener("DOMContentLoaded", initAndPlayVideos);
+} else {
+    initAndPlayVideos();
+}
+
+// Run when preloader is finished/skipped
+window.addEventListener('preloaderFinished', initAndPlayVideos);
+
+// Run on window load just in case
+window.addEventListener('load', initAndPlayVideos);

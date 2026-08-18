@@ -57,9 +57,10 @@ function startPreloader() {
 
             setTimeout(() => {
                 loader.style.display = "none";
+                window.dispatchEvent(new Event('preloaderFinished'));
 
                 if (typeof runAnimations === "function") {
-                    runAnimations();
+                     runAnimations();
                 }
             }, 500);
 
@@ -88,6 +89,7 @@ window.addEventListener("load", () => {
     } else {
         // Kalau udah pernah, langsung skip
         loader.style.display = "none";
+        window.dispatchEvent(new Event('preloaderFinished'));
 
         if (typeof runAnimations === "function") {
             runAnimations();

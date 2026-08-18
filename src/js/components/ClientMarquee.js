@@ -14,7 +14,7 @@ class ClientMarquee extends HTMLElement {
             ],
             [
                 { src: 'https://ilovelife.co.id/assets/images/medium_logo_ojk_4845c50e19.webp', alt: 'ojk' },
-                { src: 'src/assets/images/D3.webp', alt: 'D3' },
+                { src: 'src/assets/Logo/Logo_KIPFEST2026.png', alt: 'Logo KIPK Festival' },
                 { src: 'src/assets/images/Studio_titikSembilan.webp', alt: 'Titiksembilan' },
                 { src: 'src/assets/images/logo-smk.webp', alt: 'smk' },
                 { src: 'src/assets/images/akross-light.webp', alt: 'akross' },
@@ -37,7 +37,7 @@ class ClientMarquee extends HTMLElement {
         const data = window.translationsData;
         
         const titleKey = this.getAttribute('data-t-title');
-        const subtitleKey = this.getAttribute('data-t-subtitle');
+        const subtitleKey = this.getAttributep('data-t-subtitle');
 
         if (data && data[lang]) {
             if (titleKey && data[lang][titleKey]) {

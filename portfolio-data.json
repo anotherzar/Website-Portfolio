@@ -45,6 +45,20 @@
         },
         {
             "categoryId": "video",
+            "title": "THE INSPIRATION ACTOR",
+            "description": "Short film / Video production - Colorist & Online Editor",
+            "link": "https://youtu.be/qsRzYwaFTyI?si=_akQxXu3hO-nCgPB",
+            "thumbnail": "src/assets/Thumbnails/the-inspiration-actor.jpg"
+        },
+        {
+            "categoryId": "video",
+            "title": "2023 AUTOMOTIVE SHOWREEL",
+            "description": "Automotive showreel by ROVE PRODUCTION - Online Editor & Sound Designer",
+            "link": "https://youtu.be/Vs8ssqWSbc4?si=67XggOEpdyE1LJL7",
+            "thumbnail": "src/assets/Thumbnails/automotive-showreel-2023.jpg"
+        },
+        {
+            "categoryId": "video",
             "title": "Drip Drop - Music Video",
             "description": "Music video production for Drip Drop - Riging & Animation",
             "link": "https://youtu.be/VqU9O0AMfr8?si=4G-6bkE20wCW5phn",
@@ -247,6 +261,24 @@
             "description_en": "Candidate Promotion Video",
             "link": "https://drive.google.com/file/d/1RIGLSdPdbWF1tm5q0jH4YW6drOW__Efw/view?usp=sharing",
             "thumbnail": "src/assets/portfolio/video/formadiksi-kipk.webp"
+        },
+        {
+            "categoryId": "case-study",
+            "title": "Website KIPK Festival",
+            "title_en": "KIPK Festival Website",
+            "description": "Studi kasus perancangan platform website resmi pendaftaran dan informasi KIPK Festival 2026.",
+            "description_en": "Case study on official registration web platform and information hub design for KIPK Festival 2026.",
+            "link": "case-study-web.html",
+            "thumbnail": "Case_Study/UAS_WEB/screenshots/index.webp"
+        },
+        {
+            "categoryId": "case-study",
+            "title": "Visualisasi Arsitektur 3D",
+            "title_en": "3D Architectural Visualization",
+            "description": "Studi kasus pemodelan dan rendering 3D interior & eksterior hunian.",
+            "description_en": "Case study on 3D interior & exterior residential modeling and rendering.",
+            "link": "case-study-3d.html",
+            "thumbnail": "Case_Study/UAS_3D/RENDER_FINAL/EXTERIOR/Exterior_View_1.webp"
         }
     ]
 }

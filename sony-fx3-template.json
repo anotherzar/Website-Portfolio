@@ -1,0 +1,9 @@
+{
+  "image_url": "{{INPUT_IMAGE_URL}}",
+  "time_of_day": "sunset golden hour",
+  "background_location": "a busy street in Shibuya, Tokyo, with neon lights",
+  "prompt": "Apply professional color grading and style transfer to this image. The source image is a smartphone photo shot on iPhone 11. Replace the original background completely with: {{background_location}}. Adjust the lighting and time of day of the entire scene to match: {{time_of_day}}. Transform the style to look as if it was shot on a professional Sony FX3 cinema camera using S-Cinetone color science. Apply a cinematic 'Teal and Orange' color grading scheme with a warm overall tone: warm golden skin tones and highlights (orange/gold), combined with cool shadows and background tones (teal/cyan) matching the new background. Soften the harsh contrast and replace the fake digital sharpening with high-fidelity, crisp optical sharpness. Emphasize organic textures, sharp focus on the main subject (highly detailed skin pores, crisp clothing fabric), and introduce a natural cinematic depth of field (bokeh) to blur the new background smoothly. Ensure the original subject and facial features remain identical.",
+  "resolution": "2K",
+  "aspect_ratio": "auto",
+  "output_format": "jpeg"
+}
