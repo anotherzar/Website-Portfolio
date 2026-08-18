@@ -1,4 +1,34 @@
+# Operating System files
 .DS_Store
 *.DS_Store
-src/.DS_Store
-src/assets/.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Editor & IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# LaTeX build artifacts & log files
+*.log
+*.aux
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Large PDF files / reports (avoids GitHub 50MB+ warnings)
+*.pdf
+
+# Node & package manager (if used)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+*.tmp
+*.temp
