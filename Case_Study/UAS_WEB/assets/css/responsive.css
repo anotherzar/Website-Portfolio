@@ -1,0 +1,112 @@
+/* RESPONSIVE STYLES - KIP Kuliah Festival */
+
+/* Extra Large Screens (> 1400px) */
+@media (min-width: 1400px) {
+  :root {
+    --container-max: 1320px;
+  }
+  .hero-title { font-size: 5.5rem; }
+}
+
+/* Large Desktop (992px - 1199px) */
+@media (max-width: 1199.98px) {
+  .about-stats { gap: 1.5rem; }
+}
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991.98px) {
+  .hero-section { min-height: 100vh; min-height: 100dvh; }
+  .hero-title { font-size: clamp(2rem, 5vw, 3.5rem); }
+  .hero-subtitle { font-size: 1rem; }
+
+  .about-section .row { flex-direction: column; }
+  .about-section .about-image-wrapper { margin-bottom: 2rem; }
+  .about-stats { justify-content: flex-start; }
+
+  .highlight-card .card-img { height: 240px; }
+
+  .timeline-item { gap: 1.25rem; }
+
+  .info-grid { grid-template-columns: 1fr 1fr; }
+
+  .navbar-cta-btn { margin-left: 0; margin-top: 1rem; width: 100%; text-align: center; }
+
+  .footer-section .row > div { margin-bottom: 2rem; }
+}
+
+/* Small Tablet / Large Phone (576px - 767px) */
+@media (max-width: 767.98px) {
+  .section-padding { padding: clamp(3rem, 6vw, 5rem) 0; }
+  .section-title { font-size: clamp(1.5rem, 5vw, 2rem); }
+
+  .hero-section { min-height: 100vh; min-height: 100dvh; padding-top: 80px; padding-bottom: 20px; }
+  .hero-content { padding: 1rem 1rem; }
+  .hero-label { margin-bottom: 1.25rem; }
+  .hero-title { margin-bottom: 1rem; }
+  .hero-subtitle { margin-bottom: 1.75rem; }
+  .hero-buttons { flex-direction: column; align-items: center; gap: 0.75rem; }
+  .hero-buttons .btn { width: 100%; max-width: 300px; padding: 0.75rem 1.5rem; font-size: 0.8rem; }
+  .hero-scroll-indicator { display: none; }
+
+  .highlight-card .card-img { height: 200px; }
+  .highlight-card .card-overlay { padding: 1.25rem; }
+
+  .benefit-card { padding: 1.5rem; }
+  .benefit-icon { width: 48px; height: 48px; font-size: 1.25rem; }
+
+  .detail-card { padding: 1.75rem; }
+  .detail-card .detail-icon { width: 52px; height: 52px; font-size: 1.5rem; }
+
+  .info-grid { grid-template-columns: 1fr; }
+
+  .daftar-card { padding: 2rem 1.5rem; }
+
+  .cta-section::before { width: 350px; height: 350px; }
+
+  .acara-hero { min-height: 50vh; padding-top: 80px; }
+
+  .bg-orb-1 { width: 250px; height: 250px; }
+  .bg-orb-2 { width: 180px; height: 180px; }
+}
+
+/* Phone (< 576px) */
+@media (max-width: 575.98px) {
+  .section-padding { padding: clamp(2.5rem, 5vw, 4rem) 0; }
+
+  .hero-section { min-height: 100vh; min-height: 100dvh; }
+  .hero-label { font-size: 0.625rem; padding: 0.35rem 0.85rem; margin-bottom: 1rem; }
+  .hero-title { font-size: clamp(1.75rem, 8vw, 2.35rem); margin-bottom: 0.75rem; }
+  .hero-subtitle { font-size: 0.85rem; margin-bottom: 1.25rem; }
+
+  .navbar-brand { font-size: 1.15rem; }
+  .navbar-main .navbar-brand img { height: 28px; }
+
+  .about-stats { flex-direction: column; align-items: flex-start; gap: 1rem; }
+
+  .timeline-item { flex-direction: column; gap: 0.75rem; }
+  .timeline-marker { width: 40px; height: 40px; font-size: 0.95rem; }
+
+  .benefit-card h4 { font-size: 1.1rem; }
+
+  .footer-section { padding: 2rem 0 1rem; }
+  .footer-social a { width: 36px; height: 36px; font-size: 1rem; }
+  .footer-logo { height: 40px; }
+
+  .daftar-card { margin: 0 1rem; }
+  .daftar-icon { width: 64px; height: 64px; font-size: 1.5rem; }
+
+  .rundown-table { font-size: 0.8rem; }
+  .rundown-table th, .rundown-table td { padding: 0.75rem 0.5rem; }
+
+  .btn { padding: 0.65rem 1.5rem; font-size: 0.75rem; }
+  .btn-lg { padding: 0.85rem 2rem; font-size: 0.85rem; }
+}
+
+/* Very Small Phone (< 375px) */
+@media (max-width: 374.98px) {
+  .hero-title { font-size: 1.5rem; }
+  .hero-subtitle { font-size: 0.85rem; }
+  .section-title { font-size: 1.35rem; }
+  .daftar-card { padding: 1.5rem 1rem; }
+  .benefit-card { padding: 1.25rem; }
+}
