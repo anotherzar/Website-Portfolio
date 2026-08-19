@@ -320,6 +320,34 @@ main.halaman-profil {
     margin: 0;
 }
 
+.timeline-cert-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 14px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--border-soft);
+    border-radius: 20px;
+    color: var(--text);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.timeline-cert-link:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--accent, #fff);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-cert-link svg {
+    flex-shrink: 0;
+}
+
 /* 
    7. EDUCATION SECTION
     */
