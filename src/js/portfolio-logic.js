@@ -48,7 +48,14 @@ function renderCategories() {
     });
 }
 
+let currentCategoryId = null;
+let currentCategoryCount = 0;
+let currentSortOrder = 'newest';
+
 function openPlaylist(categoryId, title, desc, coverSrc, count) {
+    currentCategoryId = categoryId;
+    currentCategoryCount = count;
+    
     document.getElementById('playlist-hub').style.display = 'none';
     document.getElementById('playlist-view').style.display = 'block';
     
@@ -57,19 +64,51 @@ function openPlaylist(categoryId, title, desc, coverSrc, count) {
     document.getElementById('playlist-cover').src = coverSrc;
     document.getElementById('playlist-count-label').innerText = count + ' ' + getT('worksCount');
 
+    renderPlaylistGrid();
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function setSortOrder(order) {
+    if (currentSortOrder === order) return;
+    currentSortOrder = order;
+    
+    const btnNewest = document.getElementById('sort-btn-newest');
+    const btnOldest = document.getElementById('sort-btn-oldest');
+    if (btnNewest && btnOldest) {
+        btnNewest.classList.toggle('active', order === 'newest');
+        btnOldest.classList.toggle('active', order === 'oldest');
+    }
+    
+    renderPlaylistGrid();
+}
+
+function renderPlaylistGrid() {
+    if (!currentCategoryId) return;
+
     const grid = document.getElementById('dynamic-grid');
     if (!grid) return;
     grid.innerHTML = '';
     
     // grid setting khusus buat desain grafis
-    if (categoryId === 'graphic-design') {
+    if (currentCategoryId === 'graphic-design') {
         grid.className = 'masonry-grid';
     } else {
         grid.className = 'grid';
     }
     
-    // Loop projects per category
-    const filteredProjects = portfolioDatabase.projects.filter(p => p.categoryId === categoryId);
+    // Loop projects per category and sort by date according to currentSortOrder
+    const filteredProjects = portfolioDatabase.projects
+        .filter(p => p.categoryId === currentCategoryId)
+        .sort((a, b) => {
+            const dateA = a.date || '';
+            const dateB = b.date || '';
+            if (currentSortOrder === 'newest') {
+                return dateB.localeCompare(dateA);
+            } else {
+                return dateA.localeCompare(dateB);
+            }
+        });
     
     if (filteredProjects.length === 0) {
         grid.innerHTML = `<p style="color:#b3b3b3; grid-column: 1 / -1;">${getT('noWorks')}</p>`;
@@ -91,6 +130,8 @@ function openPlaylist(categoryId, title, desc, coverSrc, count) {
 
             const titleHtml = title ? `<h3>${title}</h3>` : '';
             const descHtml = desc ? `<p>${desc}</p>` : '';
+            const formattedDate = proj.date ? formatDate(proj.date) : '';
+            const dateHtml = formattedDate && title ? `<span class="project-date" style="display: block; font-size: 0.8rem; color: #888; margin-top: 4px;">${formattedDate}</span>` : '';
             const isMediaOnly = !title && !desc;
             
             // logic kalo json pake costume aspect rasio, default 16:9
@@ -100,17 +141,16 @@ function openPlaylist(categoryId, title, desc, coverSrc, count) {
             card.innerHTML = `
                 ${tagOpen}
                     <div class="fluid-video-wrapper" style="${wrapperStyle}">
-                        <img src="${proj.thumbnail}" alt="${title}" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="${proj.thumbnail}" alt="${title || 'Portfolio'}" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     ${titleHtml}
                     ${descHtml}
+                    ${dateHtml}
                 ${tagClose}
             `;
             grid.appendChild(card);
         });
     }
-
-    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function closePlaylist() {
@@ -153,8 +193,30 @@ function handleBackToTop() {
     }
 }
 
+// Helper format tanggal
+function formatDate(dateStr) {
+    if (!dateStr) return '';
+    const parts = dateStr.split('-');
+    if (parts.length < 3) return dateStr;
+    const year = parts[0];
+    const month = parseInt(parts[1], 10) - 1;
+    const day = parseInt(parts[2], 10);
+    const dateObj = new Date(Date.UTC(year, month, day));
+    const lang = currentLang() === 'en' ? 'en-US' : 'id-ID';
+    return dateObj.toLocaleDateString(lang, { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+}
+
 // pre-fetch data
 document.addEventListener('DOMContentLoaded', () => {
     loadPortfolioData();
     window.addEventListener('scroll', handleBackToTop);
+    window.addEventListener('languageChanged', () => {
+        if (currentCategoryId) {
+            const countLabelEl = document.getElementById('playlist-count-label');
+            if (countLabelEl) {
+                countLabelEl.innerText = currentCategoryCount + ' ' + getT('worksCount');
+            }
+            renderPlaylistGrid();
+        }
+    });
 });

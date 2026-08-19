@@ -90,6 +90,9 @@ const translationsData = {
         "portfolio_title": "Portfolio Playlists",
         "portfolio_sub": "Playlist ini berisi kumpulan karya-karya yang telah saya buat",
         "back_to_categories": "Kembali ke Kategori",
+        "sort_label": "Urutkan:",
+        "sort_newest": "Terbaru",
+        "sort_oldest": "Terlama",
 
         // Contact
         "contact_title": "Let's Connect",
@@ -204,6 +207,9 @@ const translationsData = {
         "portfolio_title": "Portfolio Playlists",
         "portfolio_sub": "This playlist contains a collection of works I have created",
         "back_to_categories": "Back to Categories",
+        "sort_label": "Sort by:",
+        "sort_newest": "Newest",
+        "sort_oldest": "Oldest",
 
         // Contact
         "contact_title": "Let's Connect",

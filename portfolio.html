@@ -54,8 +54,23 @@
                             <span style="font-size: 0.9rem; font-weight: 500;" data-t="playlist_label">Playlist</span>
                             <h2 id="playlist-title" style="font-size: clamp(2rem, 5vw, 4rem); font-weight: 900; margin: 0.5rem 0; line-height: 1.2;">Title</h2>
                             <p id="playlist-desc" style="margin: 0; max-width: 600px; color: #b3b3b3;">Desc</p>
-                            <div class="playlist-stats" style="margin-top: 1rem; font-size: 0.9rem; color: #fff; font-weight: 500; display: flex; align-items: center; gap: 4px;">
-                                <span id="playlist-count-label">0 karya</span>
+                        </div>
+                    </div>
+                    <div class="playlist-controls-bar">
+                        <div class="playlist-stats-info">
+                            <span id="playlist-count-label">0 karya</span>
+                        </div>
+                        <div class="sort-container">
+                            <span class="sort-label" data-t="sort_label">Urutkan:</span>
+                            <div class="sort-pills">
+                                <button class="sort-btn active" id="sort-btn-newest" onclick="setSortOrder('newest')">
+                                    <span data-t="sort_newest">Terbaru</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+                                </button>
+                                <button class="sort-btn" id="sort-btn-oldest" onclick="setSortOrder('oldest')">
+                                    <span data-t="sort_oldest">Terlama</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+                                </button>
                             </div>
                         </div>
                     </div>

@@ -3,12 +3,18 @@ const translations = {
     id: {
         "worksCount": "karya",
         "noWorks": "Belum ada karya di kategori ini.",
-        "backToCats": "Kembali ke Kategori"
+        "backToCats": "Kembali ke Kategori",
+        "sortNewest": "Terbaru",
+        "sortOldest": "Terlama",
+        "sortLabel": "Urutkan:"
     },
     en: {
         "worksCount": "works",
         "noWorks": "No works available in this category yet.",
-        "backToCats": "Back to Categories"
+        "backToCats": "Back to Categories",
+        "sortNewest": "Newest",
+        "sortOldest": "Oldest",
+        "sortLabel": "Sort by:"
     }
 };
 
