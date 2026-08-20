@@ -313,40 +313,65 @@
     stroke: #000;
 }
 
-/* 7. PROJECT BADGES */
+/* 7. PROJECT BADGES - CARD BRANDING INTEGRATED */
 .project-badge {
     position: absolute;
     top: 10px;
     left: 10px;
     z-index: 5;
-    padding: 4px 10px;
-    border-radius: 12px;
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.3px;
-    text-transform: uppercase;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 11px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    color: #e5e5e5;
+    background: rgba(18, 18, 18, 0.82);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
     pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.project-badge::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.badge-personal::before {
+    background: #c084fc;
+    box-shadow: 0 0 8px rgba(192, 132, 252, 0.8);
 }
 
 .badge-personal {
-    background: rgba(139, 92, 246, 0.85);
-    color: #ffffff;
-    border: 1px solid rgba(167, 139, 250, 0.4);
+    border-color: rgba(192, 132, 252, 0.3);
+}
+
+.badge-assignment::before {
+    background: #34d399;
+    box-shadow: 0 0 8px rgba(52, 211, 153, 0.8);
 }
 
 .badge-assignment {
-    background: rgba(16, 185, 129, 0.85);
-    color: #ffffff;
-    border: 1px solid rgba(52, 211, 153, 0.4);
+    border-color: rgba(52, 211, 153, 0.3);
+}
+
+.badge-client::before {
+    background: #60a5fa;
+    box-shadow: 0 0 8px rgba(96, 165, 250, 0.8);
 }
 
 .badge-client {
-    background: rgba(59, 130, 246, 0.85);
-    color: #ffffff;
-    border: 1px solid rgba(96, 165, 250, 0.4);
+    border-color: rgba(96, 165, 250, 0.3);
 }
+
 
 
