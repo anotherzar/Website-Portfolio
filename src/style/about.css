@@ -134,8 +134,8 @@ main.halaman-profil {
     font-size: 1.08rem;
     line-height: 1.8;
     color: #cbd5e1;
-    text-align: left;
-    max-width: 840px;
+    text-align: justify;
+    max-width: fit-content;
 }
 
 /* 
