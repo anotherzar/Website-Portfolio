@@ -62,7 +62,7 @@ const translationsData = {
         
         "edu_title": "Pendidikan",
         "edu_d4_degree": "D4 Teknik Multimedia Digital",
-        "edu_d4_school": "Jurusan Teknik Informatika & Komputer — Politeknik Negeri Jakarta",
+        "edu_d4_school": "Jurusan Teknik Informatika & Komputer - Politeknik Negeri Jakarta",
         "edu_d4_desc": "Sedang menempuh pendidikan D4 Teknik Multimedia Digital pada Jurusan Teknik Informatika & Komputer PNJ dengan fokus pada Software Engineering, Web Development, dan Game Development.",
         "edu_smk_degree": "SMK - Jurusan Multimedia",
         "edu_smk_school": "SMK Prestasi Prima",
@@ -184,7 +184,7 @@ const translationsData = {
         
         "edu_title": "Education",
         "edu_d4_degree": "D4 Digital Multimedia Technology",
-        "edu_d4_school": "Department of Informatics and Computer Engineering — Jakarta State Polytechnic",
+        "edu_d4_school": "Department of Informatics and Computer Engineering - Jakarta State Polytechnic",
         "edu_d4_desc": "Currently pursuing a D4 Digital Multimedia Technology degree in the Department of Informatics and Computer Engineering at PNJ, with a focus on Software Engineering, Web Development, and Game Development.",
         "edu_smk_degree": "Vocational High School - Multimedia",
         "edu_smk_school": "Prestasi Prima Vocational High School",

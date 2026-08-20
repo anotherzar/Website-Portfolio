@@ -36,6 +36,15 @@
     "projects": [
         {
             "categoryId": "video",
+            "title": "Valorant Montage 6",
+            "description": "Gaming Montage & Video Editing",
+            "link": "https://www.youtube.com/watch?v=Yrh_mkPh9Os",
+            "thumbnail": "src/assets/Thumbnails/video_Yrh_mkPh9Os.jpg",
+            "date": "2026-08-20",
+            "type": "personal"
+        },
+        {
+            "categoryId": "video",
             "title": "Valorant Montage 5",
             "description": "Gaming Montage & Video Editing",
             "link": "https://www.youtube.com/watch?v=EzRCwR8aw5A",
