@@ -20,6 +20,19 @@
     --cta-dark: #292929;
     --cta-hover: #badb6e;
 
+    /* Badge Branding Colors */
+    --badge-personal-bg: rgba(255, 255, 255, 0.08);
+    --badge-personal-text: var(--text);
+    --badge-personal-border: rgba(255, 255, 255, 0.2);
+
+    --badge-assignment-bg: rgba(59, 130, 246, 0.15);
+    --badge-assignment-text: #93c5fd;
+    --badge-assignment-border: rgba(59, 130, 246, 0.35);
+
+    --badge-client-bg: rgba(186, 219, 110, 0.15);
+    --badge-client-text: var(--cta-hover);
+    --badge-client-border: rgba(186, 219, 110, 0.35);
+
     /* Border Radius */
     --radius: 12px;
     --radius-lg: 14px;

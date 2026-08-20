@@ -35,6 +35,51 @@
     ],
     "projects": [
         {
+            "categoryId": "video",
+            "title": "Valorant Montage 5",
+            "description": "Gaming Montage & Video Editing",
+            "link": "https://www.youtube.com/watch?v=EzRCwR8aw5A",
+            "thumbnail": "src/assets/Thumbnails/video_EzRCwR8aw5A.jpg",
+            "date": "2026-08-19",
+            "type": "personal"
+        },
+        {
+            "categoryId": "video",
+            "title": "Montage Valorant 4",
+            "description": "Gaming Montage & Video Editing",
+            "link": "https://www.youtube.com/watch?v=TkTqtCJ8bC8",
+            "thumbnail": "src/assets/Thumbnails/video_TkTqtCJ8bC8.jpg",
+            "date": "2026-08-19",
+            "type": "personal"
+        },
+        {
+            "categoryId": "video",
+            "title": "Montage Valorant 3",
+            "description": "Gaming Montage & Video Editing",
+            "link": "https://www.youtube.com/watch?v=GZ6PR6VaCBk",
+            "thumbnail": "src/assets/Thumbnails/video_GZ6PR6VaCBk.jpg",
+            "date": "2026-08-19",
+            "type": "personal"
+        },
+        {
+            "categoryId": "video",
+            "title": "Montage Valorant 2",
+            "description": "Gaming Montage & Video Editing",
+            "link": "https://www.youtube.com/watch?v=jLMuFMHMSXA",
+            "thumbnail": "src/assets/Thumbnails/video_jLMuFMHMSXA.jpg",
+            "date": "2026-08-19",
+            "type": "personal"
+        },
+        {
+            "categoryId": "video",
+            "title": "Montage Valorant 1",
+            "description": "Gaming Montage & Video Editing",
+            "link": "https://www.youtube.com/watch?v=XrKHRRP8YV0",
+            "thumbnail": "src/assets/Thumbnails/video_XrKHRRP8YV0.jpg",
+            "date": "2026-08-19",
+            "type": "personal"
+        },
+        {
             "categoryId": "case-study",
             "title": "Website KIPK Festival",
             "title_en": "KIPK Festival Website",
@@ -78,7 +123,8 @@
             "description": "Motion Graphics & 2D Animation",
             "link": "https://www.youtube.com/watch?v=w7S-soNQbZw",
             "thumbnail": "src/assets/Thumbnails/playlist_5_w7S-soNQbZw.jpg",
-            "date": "2025-09-15"
+            "date": "2025-09-15",
+            "type": "assignment"
         },
         {
             "categoryId": "animation",
@@ -86,7 +132,8 @@
             "description": "Motion Graphics & Animation",
             "link": "https://youtu.be/27r0uwC3rrE?si=TG3iRHtkN6bNOrFl",
             "thumbnail": "src/assets/Thumbnails/mograph_1_27r0uwC3rrE.jpg",
-            "date": "2025-09-15"
+            "date": "2025-09-15",
+            "type": "client"
         },
         {
             "categoryId": "animation",
@@ -94,7 +141,8 @@
             "description": "Motion Graphics & Animation",
             "link": "https://youtu.be/-sAfaC_Ypho?si=Yw89jqMhRqHloFEM",
             "thumbnail": "src/assets/Thumbnails/mograph_2_-sAfaC_Ypho.jpg",
-            "date": "2025-09-15"
+            "date": "2025-09-15",
+            "type": "client"
         },
         {
             "categoryId": "animation",
@@ -102,7 +150,8 @@
             "description": "Motion Graphics & Animation",
             "link": "https://youtu.be/1bDzwEMWVGU?si=KhjI1a1umn4RoA1T",
             "thumbnail": "src/assets/Thumbnails/mograph_3_1bDzwEMWVGU.jpg",
-            "date": "2025-09-15"
+            "date": "2025-09-15",
+            "type": "client"
         },
         {
             "categoryId": "video",
@@ -146,7 +195,8 @@
             "description": "Short form content - motion graphics",
             "link": "https://www.instagram.com/reel/DHOHNQvAOAn/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
             "thumbnail": "src/assets/Thumbnails/t_ig_1.webp",
-            "date": "2025-03-15"
+            "date": "2025-03-15",
+            "type": "client"
         },
         {
             "categoryId": "video",
@@ -224,7 +274,8 @@
             "description": "Mograph motivational video - motion graphics",
             "link": "https://www.instagram.com/reel/C8NPKL_Bg1E/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
             "thumbnail": "src/assets/Thumbnails/t_ig_2.webp",
-            "date": "2024-06-14"
+            "date": "2024-06-14",
+            "type": "client"
         },
         {
             "categoryId": "animation",
@@ -232,7 +283,8 @@
             "description": "Mograph motivational video - motion graphics",
             "link": "https://www.instagram.com/reel/C8Fl_NuhOG1/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
             "thumbnail": "src/assets/Thumbnails/t_ig_3.webp",
-            "date": "2024-06-11"
+            "date": "2024-06-11",
+            "type": "client"
         },
         {
             "categoryId": "video",
@@ -249,7 +301,8 @@
             "description": "Motion Graphics & Animation",
             "link": "https://youtu.be/gWmBJU9uF5U?si=np5mUvTXOk3rdiCL",
             "thumbnail": "src/assets/Thumbnails/mograph_4_gWmBJU9uF5U.jpg",
-            "date": "2024-06-08"
+            "date": "2024-06-08",
+            "type": "client"
         },
         {
             "categoryId": "animation",
@@ -257,7 +310,8 @@
             "description": "Motion Graphics & Animation",
             "link": "https://youtu.be/om_d0afxoa8?si=wrmQ822vlYW-gSHI",
             "thumbnail": "src/assets/Thumbnails/mograph_5_om_d0afxoa8.jpg",
-            "date": "2024-06-08"
+            "date": "2024-06-08",
+            "type": "client"
         },
         {
             "categoryId": "animation",
@@ -265,7 +319,8 @@
             "description": "Motion Graphics & Animation",
             "link": "https://youtu.be/JwU3Ypr1g0o?si=ySWEQneCeFz_IQib",
             "thumbnail": "src/assets/Thumbnails/mograph_6_JwU3Ypr1g0o.jpg",
-            "date": "2024-06-08"
+            "date": "2024-06-08",
+            "type": "client"
         },
         {
             "categoryId": "animation",
@@ -273,7 +328,8 @@
             "description": "Motion Graphics & Animation",
             "link": "https://youtu.be/QIY9cFSAPeM?si=QSTtdSHW0cIxHv2F",
             "thumbnail": "src/assets/Thumbnails/mograph_7_QIY9cFSAPeM.jpg",
-            "date": "2024-06-08"
+            "date": "2024-06-08",
+            "type": "client"
         },
         {
             "categoryId": "animation",
@@ -281,7 +337,8 @@
             "description": "Motion Graphics & Animation",
             "link": "https://youtu.be/SIdHS2T986E?si=XT-VE-SDolncr0bV",
             "thumbnail": "src/assets/Thumbnails/mograph_8_SIdHS2T986E.jpg",
-            "date": "2024-06-08"
+            "date": "2024-06-08",
+            "type": "client"
         },
         {
             "categoryId": "graphic-design",
@@ -401,7 +458,8 @@
             "description": "Eric Worre - Motion Design & Video Production",
             "link": "https://youtu.be/efq9VLyuNh4?si=rE1KhKT0K4PpoXaW",
             "thumbnail": "src/assets/Thumbnails/DSA.webp",
-            "date": "2023-08-03"
+            "date": "2023-08-03",
+            "type": "client"
         },
         {
             "categoryId": "animation",
@@ -411,7 +469,8 @@
             "description_en": "Code of Conduct Socialization for PT Wijaya Karya - Animation",
             "link": "https://youtu.be/hYjwTqMC338?si=nji8kjVqYQuYBSEe",
             "thumbnail": "src/assets/Thumbnails/COC_wika.webp",
-            "date": "2023-07-26"
+            "date": "2023-07-26",
+            "type": "client"
         },
         {
             "categoryId": "video",
@@ -437,7 +496,8 @@
             "description": "Motion Graphics & Animation",
             "link": "https://youtu.be/UAJ_ch1sRkY?si=U7RDC20RTVT9bAbr",
             "thumbnail": "src/assets/Thumbnails/mograph_9_UAJ_ch1sRkY.jpg",
-            "date": "2023-01-13"
+            "date": "2023-01-13",
+            "type": "assignment"
         },
         {
             "categoryId": "animation",
@@ -445,7 +505,8 @@
             "description": "Motion Graphics & Animation",
             "link": "https://youtu.be/NWz5QR9t6Bw?si=isbB-ECCS5bGTeN5",
             "thumbnail": "src/assets/Thumbnails/mograph_10_NWz5QR9t6Bw.jpg",
-            "date": "2023-01-13"
+            "date": "2023-01-13",
+            "type": "assignment"
         },
         {
             "categoryId": "video",
@@ -498,7 +559,8 @@
             "description": "Fan edit video production - VFX & Scribble Aniamtions",
             "link": "https://www.youtube.com/watch?v=fK2Ror3ysao",
             "thumbnail": "src/assets/Thumbnails/lilifilm.webp",
-            "date": "2021-04-13"
+            "date": "2021-04-13",
+            "type": "client"
         }
     ]
 }

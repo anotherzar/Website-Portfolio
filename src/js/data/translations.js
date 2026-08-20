@@ -57,6 +57,7 @@ const translationsData = {
         
         "period_present": "Sekarang",
         "period_present_sem4": "Sekarang (Semester 4)",
+        "period_present_sem5": "Sekarang (Semester 5)",
         "period_prakerin": "2023 Praktik Kerja Industri (SMK)",
         
         "edu_title": "Pendidikan",
@@ -178,6 +179,7 @@ const translationsData = {
         
         "period_present": "Present",
         "period_present_sem4": "Present (4th Semester)",
+        "period_present_sem5": "Present (5th Semester)",
         "period_prakerin": "2023 Industrial Work Practice (Vocational)",
         
         "edu_title": "Education",
