@@ -134,6 +134,16 @@ function renderPlaylistGrid() {
             const dateHtml = formattedDate && title ? `<span class="project-date" style="display: block; font-size: 0.8rem; color: #888; margin-top: 4px;">${formattedDate}</span>` : '';
             const isMediaOnly = !title && !desc;
             
+            // Badge tag logic
+            let badgeHtml = '';
+            if (proj.type === 'personal') {
+                badgeHtml = `<span class="project-badge badge-personal">${getT('badgePersonal')}</span>`;
+            } else if (proj.type === 'assignment') {
+                badgeHtml = `<span class="project-badge badge-assignment">${getT('badgeAssignment')}</span>`;
+            } else if (proj.type === 'client') {
+                badgeHtml = `<span class="project-badge badge-client">${getT('badgeClient')}</span>`;
+            }
+
             // logic kalo json pake costume aspect rasio, default 16:9
             const customRatio = proj.aspectRatio ? `aspect-ratio: ${proj.aspectRatio}; padding-bottom: 0; height: auto;` : '';
             const wrapperStyle = `position: relative; ${cursorStyle} ${isMediaOnly ? 'margin-bottom: 0;' : ''} ${customRatio}`;
@@ -142,6 +152,7 @@ function renderPlaylistGrid() {
                 ${tagOpen}
                     <div class="fluid-video-wrapper" style="${wrapperStyle}">
                         <img src="${proj.thumbnail}" alt="${title || 'Portfolio'}" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+                        ${badgeHtml}
                     </div>
                     ${titleHtml}
                     ${descHtml}

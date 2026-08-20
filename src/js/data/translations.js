@@ -94,6 +94,9 @@ const translationsData = {
         "sort_label": "Urutkan:",
         "sort_newest": "Terbaru",
         "sort_oldest": "Terlama",
+        "badge_personal": "Proyek Personal",
+        "badge_assignment": "Proyek Tugas",
+        "badge_client": "Proyek Klien",
 
         // Contact
         "contact_title": "Let's Connect",
@@ -212,6 +215,9 @@ const translationsData = {
         "sort_label": "Sort by:",
         "sort_newest": "Newest",
         "sort_oldest": "Oldest",
+        "badge_personal": "Personal Project",
+        "badge_assignment": "Academic Project",
+        "badge_client": "Client Project",
 
         // Contact
         "contact_title": "Let's Connect",

@@ -6,7 +6,10 @@ const translations = {
         "backToCats": "Kembali ke Kategori",
         "sortNewest": "Terbaru",
         "sortOldest": "Terlama",
-        "sortLabel": "Urutkan:"
+        "sortLabel": "Urutkan:",
+        "badgePersonal": "Proyek Personal",
+        "badgeAssignment": "Proyek Tugas",
+        "badgeClient": "Proyek Klien"
     },
     en: {
         "worksCount": "works",
@@ -14,7 +17,10 @@ const translations = {
         "backToCats": "Back to Categories",
         "sortNewest": "Newest",
         "sortOldest": "Oldest",
-        "sortLabel": "Sort by:"
+        "sortLabel": "Sort by:",
+        "badgePersonal": "Personal Project",
+        "badgeAssignment": "Academic Project",
+        "badgeClient": "Client Project"
     }
 };
 

@@ -60,7 +60,8 @@
             "description": "Rotoscope Artist / Video Intro Concert",
             "link": "https://www.youtube.com/watch?v=XFFhq0xODe8&t=67s",
             "thumbnail": "src/assets/Thumbnails/video_XFFhq0xODe8.jpg",
-            "date": "2025-11-08"
+            "date": "2025-11-08",
+            "type": "client"
         },
         {
             "categoryId": "video",
@@ -68,7 +69,8 @@
             "description": "Unicorn Academy - VFX Particular Effects",
             "link": "https://youtu.be/A-b7BirJEpQ?si=eGcV_te5evRhbzfu",
             "thumbnail": "src/assets/Thumbnails/UCA.webp",
-            "date": "2025-11-08"
+            "date": "2025-11-08",
+            "type": "client"
         },
         {
             "categoryId": "animation",
@@ -108,7 +110,8 @@
             "description": "3D CGI / Lighting Study",
             "link": "https://www.youtube.com/watch?v=eZtDGWUYIl4",
             "thumbnail": "src/assets/Thumbnails/new_video_1_eZtDGWUYIl4.jpg",
-            "date": "2025-08-13"
+            "date": "2025-08-13",
+            "type": "personal"
         },
         {
             "categoryId": "video",
@@ -116,7 +119,8 @@
             "description": "3D CGI / Rendering Study",
             "link": "https://www.youtube.com/watch?v=fM6ITkS5-tw",
             "thumbnail": "src/assets/Thumbnails/new_video_2_fM6ITkS5-tw.jpg",
-            "date": "2025-08-06"
+            "date": "2025-08-06",
+            "type": "personal"
         },
         {
             "categoryId": "video",
@@ -124,7 +128,8 @@
             "description": "Render & Production Test",
             "link": "https://www.youtube.com/watch?v=PoKC6Y5ZGYI",
             "thumbnail": "src/assets/Thumbnails/new_video_3_PoKC6Y5ZGYI.jpg",
-            "date": "2025-07-24"
+            "date": "2025-07-24",
+            "type": "personal"
         },
         {
             "categoryId": "video",
@@ -132,7 +137,8 @@
             "description": "Music video collaboration with Stand Here Alone & For Revenge - Online Editor",
             "link": "https://www.youtube.com/watch?v=46iSzNAo8Sk",
             "thumbnail": "src/assets/Thumbnails/ukysd.webp",
-            "date": "2025-07-15"
+            "date": "2025-07-15",
+            "type": "client"
         },
         {
             "categoryId": "animation",
@@ -149,7 +155,8 @@
             "description_en": "Candidate Promotion Video",
             "link": "https://drive.google.com/file/d/1RIGLSdPdbWF1tm5q0jH4YW6drOW__Efw/view?usp=sharing",
             "thumbnail": "src/assets/portfolio/video/formadiksi-kipk.webp",
-            "date": "2024-11-01"
+            "date": "2024-11-01",
+            "type": "client"
         },
         {
             "categoryId": "graphic-design",
@@ -183,7 +190,8 @@
             "description": "Short film / Video production - Colorist & Online Editor",
             "link": "https://youtu.be/qsRzYwaFTyI?si=_akQxXu3hO-nCgPB",
             "thumbnail": "src/assets/Thumbnails/the-inspiration-actor.jpg",
-            "date": "2024-07-19"
+            "date": "2024-07-19",
+            "type": "client"
         },
         {
             "categoryId": "graphic-design",
@@ -232,7 +240,8 @@
             "description": "Video Production",
             "link": "https://www.youtube.com/watch?v=s4hhXXZH5-s",
             "thumbnail": "src/assets/Thumbnails/new_video_4_s4hhXXZH5-s.jpg",
-            "date": "2024-06-10"
+            "date": "2024-06-10",
+            "type": "client"
         },
         {
             "categoryId": "animation",
@@ -297,7 +306,8 @@
             "description": "Music video production for Drip Drop - Riging & Animation",
             "link": "https://youtu.be/VqU9O0AMfr8?si=4G-6bkE20wCW5phn",
             "thumbnail": "src/assets/Thumbnails/DripDropMv.webp",
-            "date": "2024-05-08"
+            "date": "2024-05-08",
+            "type": "client"
         },
         {
             "categoryId": "graphic-design",
@@ -331,7 +341,8 @@
             "description": "CGI 3D Product",
             "link": "https://www.instagram.com/p/C4vKXfExYAx/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
             "thumbnail": "src/assets/Thumbnails/t_ig_4.webp",
-            "date": "2024-03-20"
+            "date": "2024-03-20",
+            "type": "client"
         },
         {
             "categoryId": "graphic-design",
@@ -381,7 +392,8 @@
             "description": "Video Clip Cover",
             "link": "https://www.youtube.com/watch?v=II4Rwwx8J_A",
             "thumbnail": "src/assets/Thumbnails/playlist_1_II4Rwwx8J_A.jpg",
-            "date": "2023-11-10"
+            "date": "2023-11-10",
+            "type": "assignment"
         },
         {
             "categoryId": "animation",
@@ -407,7 +419,8 @@
             "description": "Automotive showreel by ROVE PRODUCTION - Online Editor & Sound Designer",
             "link": "https://youtu.be/Vs8ssqWSbc4?si=67XggOEpdyE1LJL7",
             "thumbnail": "src/assets/Thumbnails/automotive-showreel-2023.jpg",
-            "date": "2023-07-18"
+            "date": "2023-07-18",
+            "type": "client"
         },
         {
             "categoryId": "video",
@@ -415,7 +428,8 @@
             "description": "Eid greeting video for WIKA - Motion Design & Video Production",
             "link": "https://youtu.be/CYS_5l2oTUc?si=3bjikBjDRKGeaeAT",
             "thumbnail": "src/assets/Thumbnails/eidwika.webp",
-            "date": "2023-04-21"
+            "date": "2023-04-21",
+            "type": "client"
         },
         {
             "categoryId": "animation",
@@ -439,7 +453,8 @@
             "description": "Commercial / TVC Production",
             "link": "https://www.youtube.com/watch?v=TLbXh_iRylM",
             "thumbnail": "src/assets/Thumbnails/playlist_2_TLbXh_iRylM.jpg",
-            "date": "2022-11-30"
+            "date": "2022-11-30",
+            "type": "assignment"
         },
         {
             "categoryId": "video",
@@ -447,7 +462,8 @@
             "description": "Video Production",
             "link": "https://www.youtube.com/watch?v=woQJJxzg5Jc",
             "thumbnail": "src/assets/Thumbnails/playlist_3_woQJJxzg5Jc.jpg",
-            "date": "2022-11-25"
+            "date": "2022-11-25",
+            "type": "assignment"
         },
         {
             "categoryId": "video",
@@ -455,7 +471,8 @@
             "description": "3D CGI Project",
             "link": "https://youtu.be/h_5rn1Nk8dw?si=b2IxdwY8iRWMwPHI",
             "thumbnail": "src/assets/Thumbnails/blackjack.webp",
-            "date": "2022-06-20"
+            "date": "2022-06-20",
+            "type": "assignment"
         },
         {
             "categoryId": "video",
@@ -463,7 +480,8 @@
             "description": "Short Film / Video Production",
             "link": "https://www.youtube.com/watch?v=PHiC8E79O2c",
             "thumbnail": "src/assets/Thumbnails/playlist_4_PHiC8E79O2c.jpg",
-            "date": "2022-01-23"
+            "date": "2022-01-23",
+            "type": "assignment"
         },
         {
             "categoryId": "video",
@@ -471,7 +489,8 @@
             "description": "Gaming Montage & Video Editing",
             "link": "https://www.youtube.com/watch?v=coYc0zrjiYM",
             "thumbnail": "src/assets/Thumbnails/new_video_5_coYc0zrjiYM.jpg",
-            "date": "2021-10-04"
+            "date": "2021-10-04",
+            "type": "personal"
         },
         {
             "categoryId": "animation",
