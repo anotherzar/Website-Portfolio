@@ -348,6 +348,27 @@
     border: 1px solid var(--badge-client-border);
 }
 
+/* 8. PROJECT ROLE BADGE (IN-CARD) */
+.role-badges-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 6px 0 8px 0;
+}
+
+.project-role-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.08);
+    color: #cbd5e1;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.76rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    width: fit-content;
+}
+
 
 
 

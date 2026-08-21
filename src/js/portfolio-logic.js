@@ -148,6 +148,14 @@ function renderPlaylistGrid() {
             const customRatio = proj.aspectRatio ? `aspect-ratio: ${proj.aspectRatio}; padding-bottom: 0; height: auto;` : '';
             const wrapperStyle = `position: relative; ${cursorStyle} ${isMediaOnly ? 'margin-bottom: 0;' : ''} ${customRatio}`;
 
+            // Role badge tag logic (kalo ada di json, pisahkan jika ada koma atau tanda &)
+            let roleBadgeHtml = '';
+            if (proj.role) {
+                const roles = proj.role.split(/[,&]/).map(r => r.trim()).filter(r => r);
+                const badges = roles.map(r => `<span class="project-role-badge">${r}</span>`).join('');
+                roleBadgeHtml = `<div class="role-badges-container">${badges}</div>`;
+            }
+
             card.innerHTML = `
                 ${tagOpen}
                     <div class="fluid-video-wrapper" style="${wrapperStyle}">
@@ -155,6 +163,7 @@ function renderPlaylistGrid() {
                         ${badgeHtml}
                     </div>
                     ${titleHtml}
+                    ${roleBadgeHtml}
                     ${descHtml}
                     ${dateHtml}
                 ${tagClose}
