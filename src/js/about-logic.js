@@ -103,6 +103,9 @@ function renderProfileSection(lang) {
     }
 }
 
+// Track state for tech stack expand/collapse
+let isTechStackExpanded = false;
+
 // 2. RENDER TECH STACK
 function renderTechStackSection(lang) {
     const container = document.getElementById('tech-stack-container');
@@ -111,7 +114,9 @@ function renderTechStackSection(lang) {
 
     container.innerHTML = '';
 
-    data.forEach(cat => {
+    const initialVisibleCount = 2;
+
+    data.forEach((cat, index) => {
         const categoryTitle = cat.category[lang] || cat.category['id'] || '';
 
         const itemsHtml = cat.items.map(item => {
@@ -129,6 +134,10 @@ function renderTechStackSection(lang) {
 
         const catEl = document.createElement('div');
         catEl.className = 'tech-category';
+        if (index >= initialVisibleCount && !isTechStackExpanded) {
+            catEl.classList.add('tech-category-hidden');
+        }
+
         catEl.innerHTML = `
             <h3 class="tech-category-title">${categoryTitle}</h3>
             <div class="tech-icons">
@@ -138,9 +147,71 @@ function renderTechStackSection(lang) {
         container.appendChild(catEl);
     });
 
+    // Add See More / See Less Button if category count > initialVisibleCount
+    if (data.length > initialVisibleCount) {
+        const fadeOverlay = document.createElement('div');
+        fadeOverlay.className = `tech-stack-fade-overlay ${isTechStackExpanded ? 'hidden' : ''}`;
+        container.appendChild(fadeOverlay);
+
+        const seeMoreWrapper = document.createElement('div');
+        seeMoreWrapper.className = `see-more-container ${isTechStackExpanded ? 'expanded' : ''}`;
+        
+        const seeMoreText = lang === 'en' ? 'See More Tech Stack' : 'Lihat Selengkapnya';
+        const seeLessText = lang === 'en' ? 'Show Less' : 'Lihat Lebih Sedikit';
+        const btnLabel = isTechStackExpanded ? seeLessText : seeMoreText;
+
+        seeMoreWrapper.innerHTML = `
+            <button type="button" class="btn-see-more ${isTechStackExpanded ? 'expanded' : ''}" id="btn-toggle-techstack">
+                <span class="btn-see-more-label">${btnLabel}</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+        `;
+        container.appendChild(seeMoreWrapper);
+
+        const btnToggle = seeMoreWrapper.querySelector('#btn-toggle-techstack');
+        btnToggle.addEventListener('click', () => {
+            isTechStackExpanded = !isTechStackExpanded;
+
+            fadeOverlay.classList.toggle('hidden', isTechStackExpanded);
+            seeMoreWrapper.classList.toggle('expanded', isTechStackExpanded);
+
+            const hiddenCats = container.querySelectorAll('.tech-category');
+            hiddenCats.forEach((el, idx) => {
+                if (idx >= initialVisibleCount) {
+                    if (isTechStackExpanded) {
+                        el.classList.remove('tech-category-hidden');
+                    } else {
+                        el.classList.add('tech-category-hidden');
+                    }
+                }
+            });
+
+            btnToggle.classList.toggle('expanded', isTechStackExpanded);
+            const labelSpan = btnToggle.querySelector('.btn-see-more-label');
+            if (labelSpan) {
+                labelSpan.textContent = isTechStackExpanded ? seeLessText : seeMoreText;
+            }
+
+            if (isTechStackExpanded && typeof anime !== 'undefined') {
+                const newlyVisible = Array.from(hiddenCats).slice(initialVisibleCount);
+                anime({
+                    targets: newlyVisible,
+                    opacity: [0, 1],
+                    translateY: [30, 0],
+                    easing: 'easeOutExpo',
+                    duration: 500,
+                    delay: anime.stagger(80)
+                });
+            } else if (!isTechStackExpanded) {
+                container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    }
+
     if (typeof anime !== 'undefined' && container.children.length > 0) {
+        const visibleCats = container.querySelectorAll('.tech-category:not(.tech-category-hidden)');
         anime({
-            targets: '#tech-stack-container .tech-category',
+            targets: visibleCats,
             opacity: [0, 1],
             translateY: [40, 0],
             easing: 'easeOutExpo',
@@ -150,6 +221,9 @@ function renderTechStackSection(lang) {
     }
 }
 
+// Track state for experience expand/collapse
+let isExperienceExpanded = false;
+
 // 3. RENDER PENGALAMAN
 function renderExperienceSection(lang) {
     const container = document.getElementById('experience-timeline');
@@ -158,7 +232,9 @@ function renderExperienceSection(lang) {
 
     container.innerHTML = '';
 
-    data.forEach(item => {
+    const initialVisibleCount = 1;
+
+    data.forEach((item, index) => {
         const titleText = item.title[lang] || item.title['id'] || '';
         const companyText = item.company[lang] || item.company['id'] || '';
         const periodText = item.period[lang] || item.period['id'] || '';
@@ -177,6 +253,10 @@ function renderExperienceSection(lang) {
 
         const itemEl = document.createElement('div');
         itemEl.className = 'timeline-item';
+        if (index >= initialVisibleCount && !isExperienceExpanded) {
+            itemEl.classList.add('timeline-item-hidden');
+        }
+
         itemEl.innerHTML = `
             <div class="timeline-marker"></div>
             <div class="timeline-content">
@@ -197,9 +277,72 @@ function renderExperienceSection(lang) {
         container.appendChild(itemEl);
     });
 
+    // Add See More / See Less Button if experience count > initialVisibleCount
+    if (data.length > initialVisibleCount) {
+        // Create Gradient Fade Overlay Element
+        const fadeOverlay = document.createElement('div');
+        fadeOverlay.className = `timeline-fade-overlay ${isExperienceExpanded ? 'hidden' : ''}`;
+        container.appendChild(fadeOverlay);
+
+        const seeMoreWrapper = document.createElement('div');
+        seeMoreWrapper.className = `see-more-container ${isExperienceExpanded ? 'expanded' : ''}`;
+        
+        const seeMoreText = lang === 'en' ? 'See More Experience' : 'Lihat Selengkapnya';
+        const seeLessText = lang === 'en' ? 'Show Less' : 'Lihat Lebih Sedikit';
+        const btnLabel = isExperienceExpanded ? seeLessText : seeMoreText;
+
+        seeMoreWrapper.innerHTML = `
+            <button type="button" class="btn-see-more ${isExperienceExpanded ? 'expanded' : ''}" id="btn-toggle-experience">
+                <span class="btn-see-more-label">${btnLabel}</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+        `;
+        container.appendChild(seeMoreWrapper);
+
+        const btnToggle = seeMoreWrapper.querySelector('#btn-toggle-experience');
+        btnToggle.addEventListener('click', () => {
+            isExperienceExpanded = !isExperienceExpanded;
+
+            fadeOverlay.classList.toggle('hidden', isExperienceExpanded);
+            seeMoreWrapper.classList.toggle('expanded', isExperienceExpanded);
+
+            const hiddenItems = container.querySelectorAll('.timeline-item');
+            hiddenItems.forEach((el, idx) => {
+                if (idx >= initialVisibleCount) {
+                    if (isExperienceExpanded) {
+                        el.classList.remove('timeline-item-hidden');
+                    } else {
+                        el.classList.add('timeline-item-hidden');
+                    }
+                }
+            });
+
+            btnToggle.classList.toggle('expanded', isExperienceExpanded);
+            const labelSpan = btnToggle.querySelector('.btn-see-more-label');
+            if (labelSpan) {
+                labelSpan.textContent = isExperienceExpanded ? seeLessText : seeMoreText;
+            }
+
+            if (isExperienceExpanded && typeof anime !== 'undefined') {
+                const newlyVisible = Array.from(hiddenItems).slice(initialVisibleCount);
+                anime({
+                    targets: newlyVisible,
+                    opacity: [0, 1],
+                    translateY: [30, 0],
+                    easing: 'easeOutExpo',
+                    duration: 500,
+                    delay: anime.stagger(80)
+                });
+            } else if (!isExperienceExpanded) {
+                container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    }
+
     if (typeof anime !== 'undefined' && container.children.length > 0) {
+        const visibleItems = container.querySelectorAll('.timeline-item:not(.timeline-item-hidden)');
         anime({
-            targets: '#experience-timeline .timeline-item',
+            targets: visibleItems,
             opacity: [0, 1],
             translateY: [40, 0],
             easing: 'easeOutExpo',
@@ -209,6 +352,9 @@ function renderExperienceSection(lang) {
     }
 }
 
+// Track state for education expand/collapse
+let isEducationExpanded = false;
+
 // 4. RENDER PENDIDIKAN & SERTIFIKASI
 function renderEducationSection(lang) {
     const container = document.getElementById('education-container');
@@ -216,6 +362,9 @@ function renderEducationSection(lang) {
     if (!container || !data) return;
 
     container.innerHTML = '';
+
+    const initialVisibleCount = 1;
+    let totalItemCount = 0;
 
     // Formal Education
     if (data.education && Array.isArray(data.education)) {
@@ -227,6 +376,9 @@ function renderEducationSection(lang) {
 
             const itemEl = document.createElement('div');
             itemEl.className = 'pendidikan-item';
+            if (totalItemCount >= initialVisibleCount && !isEducationExpanded) {
+                itemEl.classList.add('pendidikan-item-hidden');
+            }
 
             const iconHtml = item.iconType === 'image'
                 ? `<img src="${item.icon}" alt="${degreeText}" style="width: 140px; height: 140px; object-fit: contain;">`
@@ -242,6 +394,7 @@ function renderEducationSection(lang) {
                 </div>
             `;
             container.appendChild(itemEl);
+            totalItemCount++;
         });
     }
 
@@ -272,6 +425,10 @@ function renderEducationSection(lang) {
 
         const certSectionEl = document.createElement('div');
         certSectionEl.className = 'pendidikan-item';
+        if (totalItemCount >= initialVisibleCount && !isEducationExpanded) {
+            certSectionEl.classList.add('pendidikan-item-hidden');
+        }
+
         certSectionEl.innerHTML = `
             <div class="pendidikan-icon">${certSection.icon || '📜'}</div>
             <div class="pendidikan-content">
@@ -284,6 +441,80 @@ function renderEducationSection(lang) {
             </div>
         `;
         container.appendChild(certSectionEl);
+        totalItemCount++;
+    }
+
+    // Add See More / See Less Button if totalItemCount > initialVisibleCount
+    if (totalItemCount > initialVisibleCount) {
+        const fadeOverlay = document.createElement('div');
+        fadeOverlay.className = `education-fade-overlay ${isEducationExpanded ? 'hidden' : ''}`;
+        container.appendChild(fadeOverlay);
+
+        const seeMoreWrapper = document.createElement('div');
+        seeMoreWrapper.className = `see-more-container ${isEducationExpanded ? 'expanded' : ''}`;
+        
+        const seeMoreText = lang === 'en' ? 'See More Education & Certifications' : 'Lihat Selengkapnya';
+        const seeLessText = lang === 'en' ? 'Show Less' : 'Lihat Lebih Sedikit';
+        const btnLabel = isEducationExpanded ? seeLessText : seeMoreText;
+
+        seeMoreWrapper.innerHTML = `
+            <button type="button" class="btn-see-more ${isEducationExpanded ? 'expanded' : ''}" id="btn-toggle-education">
+                <span class="btn-see-more-label">${btnLabel}</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+        `;
+        container.appendChild(seeMoreWrapper);
+
+        const btnToggle = seeMoreWrapper.querySelector('#btn-toggle-education');
+        btnToggle.addEventListener('click', () => {
+            isEducationExpanded = !isEducationExpanded;
+
+            fadeOverlay.classList.toggle('hidden', isEducationExpanded);
+            seeMoreWrapper.classList.toggle('expanded', isEducationExpanded);
+
+            const hiddenItems = container.querySelectorAll('.pendidikan-item');
+            hiddenItems.forEach((el, idx) => {
+                if (idx >= initialVisibleCount) {
+                    if (isEducationExpanded) {
+                        el.classList.remove('pendidikan-item-hidden');
+                    } else {
+                        el.classList.add('pendidikan-item-hidden');
+                    }
+                }
+            });
+
+            btnToggle.classList.toggle('expanded', isEducationExpanded);
+            const labelSpan = btnToggle.querySelector('.btn-see-more-label');
+            if (labelSpan) {
+                labelSpan.textContent = isEducationExpanded ? seeLessText : seeMoreText;
+            }
+
+            if (isEducationExpanded && typeof anime !== 'undefined') {
+                const newlyVisible = Array.from(hiddenItems).slice(initialVisibleCount);
+                anime({
+                    targets: newlyVisible,
+                    opacity: [0, 1],
+                    translateY: [30, 0],
+                    easing: 'easeOutExpo',
+                    duration: 500,
+                    delay: anime.stagger(80)
+                });
+            } else if (!isEducationExpanded) {
+                container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    }
+
+    if (typeof anime !== 'undefined' && container.children.length > 0) {
+        const visibleEdu = container.querySelectorAll('.pendidikan-item:not(.pendidikan-item-hidden)');
+        anime({
+            targets: visibleEdu,
+            opacity: [0, 1],
+            translateY: [40, 0],
+            easing: 'easeOutExpo',
+            duration: 600,
+            delay: anime.stagger(100)
+        });
     }
 }
 

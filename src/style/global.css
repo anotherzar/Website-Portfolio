@@ -3,24 +3,38 @@
     */
 
 :root {
-    /* Colors */
+    /* Background Colors */
     --bg: #0f0f0f;
+    --bg-nav: #131313;
     --bg-card: #1a1a1a;
-    --text: #e5e5e5;
+    --bg-card-hover: #222222;
+
+    /* Text Colors */
+    --text: #ffffff;
+    --text-body: #e5e5e5;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+    --text-subtle: #64748b;
+
+    /* Brand & Accent Colors */
     --accent: #3b82f6;
+    --accent-light: #60a5fa;
+    --accent-hover: #2563eb;
+    --accent-spotify: #1db954;
+    --accent-green: #badb6e;
+    --accent-red: #ef4444;
 
     /* Borders */
-    --border: #222;
-    --border-light: #333;
-    --border-soft: #ffffff10;
-    --border-soft-2: #ffffff15;
+    --border: #222222;
+    --border-light: #333333;
+    --border-soft: rgba(255, 255, 255, 0.1);
+    --border-soft-2: rgba(255, 255, 255, 0.15);
 
-    /* Interactive States */
-    --hover-bg: #222;
+    /* Interactive States & Badges */
+    --hover-bg: #222222;
     --cta-dark: #292929;
-    --cta-hover: #badb6e;
+    --cta-hover: var(--accent-green);
 
-    /* Badge Branding Colors */
     --badge-personal-bg: rgba(255, 255, 255, 0.08);
     --badge-personal-text: var(--text);
     --badge-personal-border: rgba(255, 255, 255, 0.2);
@@ -34,9 +48,12 @@
     --badge-client-border: rgba(186, 219, 110, 0.35);
 
     /* Border Radius */
+    --radius-sm: 8px;
     --radius: 12px;
     --radius-lg: 14px;
     --radius-xl: 16px;
+    --radius-full: 9999px;
+    --radius-pill: 50px;
 
     /* Spacing */
     --space: 1.5rem;
@@ -97,7 +114,7 @@ main {
     left: 0;
     width: 100%;
     z-index: 999;
-    background: #131313;
+    background: var(--bg-nav);
     display: flex;
     justify-content: center;
     gap: 2rem;
