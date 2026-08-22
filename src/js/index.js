@@ -1,9 +1,16 @@
 async function kirimPesan() {
-    const nama = document.getElementById("nama").value;
-    const email = document.getElementById("email").value;
-    const subjek = document.getElementById("subjek").value;
-    const pesan = document.getElementById("pesan").value;
+    const namaEl = document.getElementById("nama");
+    const emailEl = document.getElementById("email");
+    const subjekEl = document.getElementById("subjek");
+    const pesanEl = document.getElementById("pesan");
     const status = document.getElementById("status");
+
+    if (!namaEl || !emailEl || !subjekEl || !pesanEl || !status) return;
+
+    const nama = namaEl.value.trim();
+    const email = emailEl.value.trim();
+    const subjek = subjekEl.value.trim();
+    const pesan = pesanEl.value.trim();
 
     if (nama === "" || subjek === "" || pesan === "" || !email.includes("@")) {
         status.innerText = "Mohon lengkapi data dengan benar!";
@@ -14,6 +21,10 @@ async function kirimPesan() {
     status.innerText = "Sedang mengirim pesan...";
     status.style.color = "#8e8e93";
 
+    const apiKey = typeof SITE_CONFIG !== 'undefined' && SITE_CONFIG.WEB3FORMS_KEY
+        ? SITE_CONFIG.WEB3FORMS_KEY
+        : "13d2cb84-714c-400e-bf21-db18caa75743";
+
     try {
         const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
@@ -22,7 +33,7 @@ async function kirimPesan() {
                 Accept: "application/json",
             },
             body: JSON.stringify({
-                access_key: "13d2cb84-714c-400e-bf21-db18caa75743",
+                access_key: apiKey,
                 subject: `Kontak dari Portfolio: ${subjek}`,
                 from_name: nama,
                 email: email,
@@ -34,7 +45,8 @@ async function kirimPesan() {
         if (result.success) {
             status.innerText = "Pesan berhasil dikirim! Saya akan segera menghubungi Anda.";
             status.style.color = "#badb6e";
-            document.getElementById("contactForm").reset();
+            const form = document.getElementById("contactForm");
+            if (form) form.reset();
         } else {
             status.innerText = "Gagal mengirim pesan. Silakan coba lagi nanti.";
             status.style.color = "#ff4d4d";
@@ -45,38 +57,36 @@ async function kirimPesan() {
     }
 }
 
-// Drag-to-scroll slider
+// Drag-to-scroll slider (only on pages with .clients-slider)
 const slider = document.querySelector('.clients-slider');
-let isDown = false;
-let startX;
-let scrollLeft;
+if (slider) {
+    let isDown = false;
+    let startX;
+    let scrollLeft;
 
-// Event 1: Mousedown (mulai drag)
-slider.addEventListener('mousedown', (e) => {
-    isDown = true;
-    slider.classList.add('active');
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-});
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    });
 
-// Event 2: Mouseleave (batal drag)
-slider.addEventListener('mouseleave', () => {
-    isDown = false;
-});
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+    });
 
-// Event 3: Mouseup (stop drag)
-slider.addEventListener('mouseup', () => {
-    isDown = false;
-});
+    slider.addEventListener('mouseup', () => {
+        isDown = false;
+    });
 
-// Event 4: Mousemove (handle dragging)
-slider.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 1.2;
-    slider.scrollLeft = scrollLeft - walk;
-});
+    slider.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 1.2;
+        slider.scrollLeft = scrollLeft - walk;
+    });
+}
 
 // Safari & iOS Video Autoplay / Play Button Fix
 const initAndPlayVideos = () => {

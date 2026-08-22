@@ -1,0 +1,3 @@
+const SITE_CONFIG = {
+    WEB3FORMS_KEY: "13d2cb84-714c-400e-bf21-db18caa75743"
+};

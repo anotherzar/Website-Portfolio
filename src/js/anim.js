@@ -1,22 +1,82 @@
-// Animate hero section
-anime({
-    targets: '.hero h1, .hero p, .hero-img, .cta-container .cta-btn, .hero-socials a, .skills-pattern h2, .skills-pattern .skills-sub, .skill-card',
-    opacity: [0, 1],
-    translateY: [50, 0],
-    easing: 'easeOutExpo',
-    duration: 800,
-    delay: anime.stagger(100)
-});
+// ==============================
+// SCROLL-TRIGGERED ANIMATIONS
+// ==============================
 
-// Animate content fade in
-anime({
-    targets: '.content, .grid .card, .section-title, .teks-bio, .minat-card, .tech-category, .timeline-item, .pendidikan-item, .personality-container, .certificate-card',
-    opacity: [0, 1],
-    translateY: [60, 0],
-    easing: 'easeOutExpo',
-    duration: 600,
-    delay: anime.stagger(150)
-});
+// Helper: Animate elements when they enter the viewport (IntersectionObserver)
+function initScrollAnimations() {
+    if (typeof anime === 'undefined') return;
+
+    // Selectors for elements that should animate on scroll
+    const scrollTargets = [
+        '.content', '.grid .card', '.section-title', '.teks-bio',
+        '.minat-card', '.tech-category', '.timeline-item',
+        '.pendidikan-item', '.personality-container', '.certificate-card',
+        'spotify-component', '.bagian-profil',
+        '.skill-card', '.playlist-grid'
+    ].join(', ');
+
+    const observedElements = Array.from(document.querySelectorAll(scrollTargets))
+        .filter(el => !el.classList.contains('profile-img') && el.id !== 'profile-img');
+
+    if (!observedElements.length) return;
+
+    // Set initial state: invisible
+    observedElements.forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(40px)';
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+        const visible = entries.filter(e => e.isIntersecting);
+        if (!visible.length) return;
+
+        visible.forEach(entry => {
+            observer.unobserve(entry.target);
+        });
+
+        anime({
+            targets: visible.map(e => e.target),
+            opacity: [0, 1],
+            translateY: [40, 0],
+            easing: 'easeOutExpo',
+            duration: 600,
+            delay: anime.stagger(100)
+        });
+    }, {
+        threshold: 0.08,
+        rootMargin: '0px 0px -40px 0px'
+    });
+
+    observedElements.forEach(el => observer.observe(el));
+}
+
+// Hero animations — always run immediately (above the fold)
+function runHeroAnimations() {
+    if (typeof anime === 'undefined') return;
+
+    const heroTargets = '.hero h1, .hero p, .hero-img, .cta-container .cta-btn, .hero-socials a, .skills-pattern h2, .skills-pattern .skills-sub';
+    const heroElements = document.querySelectorAll(heroTargets);
+    if (!heroElements.length) return;
+
+    anime({
+        targets: heroTargets,
+        opacity: [0, 1],
+        translateY: [50, 0],
+        easing: 'easeOutExpo',
+        duration: 800,
+        delay: anime.stagger(100)
+    });
+}
+
+// Combined runner
+function runAnimations() {
+    runHeroAnimations();
+    initScrollAnimations();
+}
+
+// ==============================
+// PRELOADER
+// ==============================
 
 const languages = [
     "Halo", "Hello", "Hola", "Bonjour", "Ciao",
@@ -24,7 +84,6 @@ const languages = [
     "Привет", "Olá", "Merhaba", "Sawadee", "Salam"
 ];
 
-// Preloader function - ganti bahasa
 function startPreloader() {
     const loader = document.getElementById("preloader");
     const text = document.getElementById("loading-text");
@@ -88,7 +147,9 @@ window.addEventListener("load", () => {
         startPreloader();
     } else {
         // Kalau udah pernah, langsung skip
-        loader.style.display = "none";
+        if (loader) {
+            loader.style.display = "none";
+        }
         window.dispatchEvent(new Event('preloaderFinished'));
 
         if (typeof runAnimations === "function") {
@@ -96,4 +157,3 @@ window.addEventListener("load", () => {
         }
     }
 });
-
