@@ -1,0 +1,10 @@
+{
+  "mode": "lanyard",
+  "useLanyardApi": true,
+  "discordUserId": "523678428143288340",
+  "spotifyCredentials": {
+    "clientId": "",
+    "clientSecret": "",
+    "refreshToken": ""
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": {
+    "id": "Fazar",
+    "en": "Fazar"
+  },
+  "username": "anotherzar",
+  "pronouns": {
+    "id": "he/him",
+    "en": "he/him"
+  },
+  "role": {
+    "id": "Mahasiswa <span class=\"role-highlight\">Teknik Komputer</span>",
+    "en": "<span class=\"role-highlight\">Computer Engineering</span> Student"
+  },
+  "location": {
+    "id": "Jakarta, Indonesia",
+    "en": "Jakarta, Indonesia"
+  },
+  "bio": {
+    "id": "Halo! Saya Fazar, mahasiswa D4 Teknik Multimedia Digital Jurusan Teknik Informatika dan Komputer di Politeknik Negeri Jakarta. Sejak 2021, saya bekerja sebagai Motion Graphics Designer secara remote. Pernah berkolaborasi dengan Sony Music untuk post-produksi music video (MV) dan sebagai 3D Artist di Orbit Universe Studio. Meraih Juara 3 lomba desain poster tingkat Provinsi Jakarta. Saya juga gemar bermain gitar listrik dan mendengarkan musik untuk mencari inspirasi dan ide kreatif.",
+    "en": "Hello! I'm Fazar, a D4 Digital Multimedia Technology student in the Department of Informatics and Computer Engineering at Jakarta State Polytechnic. Since 2021, I've been working as a remote Motion Graphics Designer. I have collaborated with Sony Music for music video post-production and worked as a 3D Artist at Orbit Universe Studio. I won 3rd place in a poster design competition in Jakarta Province. I also enjoy playing electric guitar and listening to music for creative inspiration."
+  },
+  "avatar": "src/assets/images/pfp.webp",
+  "avatarAlt": "Fazar Profile Picture",
+  "banner": "https://i.pinimg.com/originals/65/b7/e6/65b7e6bcf4d4ac3b208445ea49bd2284.gif",
+  "bannerAlt": "Profile Banner"
+}

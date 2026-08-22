@@ -1,0 +1,124 @@
+[
+  {
+    "category": {
+      "id": "Frontend",
+      "en": "Frontend"
+    },
+    "items": [
+      {
+        "name": "HTML",
+        "type": "devicon",
+        "icon": "devicon-html5-plain colored"
+      },
+      {
+        "name": "CSS",
+        "type": "devicon",
+        "icon": "devicon-css3-plain colored"
+      },
+      {
+        "name": "JavaScript",
+        "type": "devicon",
+        "icon": "devicon-javascript-plain colored"
+      },
+      {
+        "name": "React",
+        "type": "devicon",
+        "icon": "devicon-react-original colored"
+      },
+      {
+        "name": "Vite",
+        "type": "image",
+        "icon": "src/assets/icons/Tools/Vite.webp"
+      },
+      {
+        "name": "Tailwind",
+        "type": "devicon",
+        "icon": "devicon-tailwindcss-plain colored"
+      }
+    ]
+  },
+  {
+    "category": {
+      "id": "Backend",
+      "en": "Backend"
+    },
+    "items": [
+      {
+        "name": "Python",
+        "type": "devicon",
+        "icon": "devicon-python-plain colored"
+      },
+      {
+        "name": "PHP",
+        "type": "devicon",
+        "icon": "devicon-php-plain colored"
+      },
+      {
+        "name": "MySQL",
+        "type": "devicon",
+        "icon": "devicon-mysql-plain colored"
+      }
+    ]
+  },
+  {
+    "category": {
+      "id": "Design & Creative",
+      "en": "Design & Creative"
+    },
+    "items": [
+      {
+        "name": "Figma",
+        "type": "image",
+        "icon": "src/assets/icons/Tools/figma.webp"
+      },
+      {
+        "name": "Blender",
+        "type": "image",
+        "icon": "src/assets/icons/Tools/Blender.webp"
+      },
+      {
+        "name": "Premiere",
+        "type": "image",
+        "icon": "src/assets/icons/Tools/Pr.webp"
+      },
+      {
+        "name": "After FX",
+        "type": "image",
+        "icon": "src/assets/icons/Tools/Ae.webp"
+      },
+      {
+        "name": "Photoshop",
+        "type": "image",
+        "icon": "src/assets/icons/Tools/Ps.webp"
+      },
+      {
+        "name": "Illustrator",
+        "type": "image",
+        "icon": "src/assets/icons/Tools/ai.webp"
+      },
+      {
+        "name": "Substance 3D",
+        "type": "image",
+        "icon": "src/assets/icons/Tools/Pt.webp"
+      }
+    ]
+  },
+  {
+    "category": {
+      "id": "Tools & Others",
+      "en": "Tools & Others"
+    },
+    "items": [
+      {
+        "name": "GitHub",
+        "type": "devicon",
+        "icon": "devicon-github-original"
+      },
+      {
+        "name": "LaTeX",
+        "type": "devicon",
+        "icon": "devicon-latex-original"
+      }
+    ]
+  }
+]

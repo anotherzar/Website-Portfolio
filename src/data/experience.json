@@ -1,0 +1,177 @@
+[
+  {
+    "id": "exp-1",
+    "logo": "src/assets/Logo/Logo_PNJ.webp",
+    "logoAlt": "Logo Politeknik Negeri Jakarta",
+    "title": {
+      "id": "Ketua Divisi Animator 2D",
+      "en": "Head of 2D Animator Division"
+    },
+    "company": {
+      "id": "Pengabdian Kepada Masyarakat Skema Lektor",
+      "en": "Community Service Program (Lektor Scheme)"
+    },
+    "period": {
+      "id": "On Going",
+      "en": "On Going"
+    },
+    "description": {
+      "id": "Bertanggung jawab dalam penggarapan animasi 2D karakter untuk proyek Pengabdian Kepada Masyarakat (Skema Lektor). Berfokus pada animasi pergerakan visual dan motion karakter 2D berbasis aset yang telah disediakan oleh tim.",
+      "en": "Responsible for 2D character animation production for the Community Service program (Lektor Scheme). Focused on visual motion design and animating 2D character assets provided by the team."
+    }
+  },
+  {
+    "id": "exp-2",
+    "logo": "src/assets/Logo/Logo_KIPFEST2026.png",
+    "logoAlt": "Logo KIPK Festival",
+    "title": {
+      "id": "Staff Divisi HPDD",
+      "en": "HPDD Division Staff"
+    },
+    "company": {
+      "id": "KIP Kuliah Festival 2026 PNJ",
+      "en": "KIP Kuliah Festival 2026 PNJ"
+    },
+    "period": {
+      "id": "2026",
+      "en": "2026"
+    },
+    "description": {
+      "id": "Bertanggung jawab sebagai Staff Divisi HPDD dalam kepanitiaan KIP Kuliah Festival 2026 PNJ, sekaligus merancang dan membangun platform website resmi KIPK Festival.",
+      "en": "Served as HPDD Division Staff for the KIP Kuliah Festival 2026 PNJ committee, while designing and building the official KIPK Festival website platform."
+    }
+  },
+  {
+    "id": "exp-3",
+    "logo": "src/assets/images/Studio_titikSembilan.webp",
+    "logoAlt": "Studio Titik Sembilan Logo",
+    "title": {
+      "id": "Online Editor",
+      "en": "Online Editor"
+    },
+    "company": {
+      "id": "Studio Titik Sembilan & Sony Music",
+      "en": "Studio Titik Sembilan & Sony Music"
+    },
+    "period": {
+      "id": "2025",
+      "en": "2025"
+    },
+    "description": {
+      "id": "Berkesempatan bergabung dengan team Studio Titik Sembilan sebagai online editor untuk produksi music video. Mengerjakan post-production dan editing untuk project music video \"Untuk Kau Yang di Sana\" by For Revenge dan Stand Here Alone. Pengalaman bekerja dengan tim profesional dalam industri musik Indonesia.",
+      "en": "Had the opportunity to join the Studio Titik Sembilan team as an online editor for music video production. Worked on post-production and editing for the music video project \"Untuk Kau Yang di Sana\" by For Revenge and Stand Here Alone. Experience working with a professional team in the Indonesian music industry."
+    }
+  },
+  {
+    "id": "exp-4",
+    "logo": "https://csc-pnj.vercel.app/logo-csc.png",
+    "logoAlt": "Computer Student Club PNJ Logo",
+    "title": {
+      "id": "Staff Software Development",
+      "en": "Software Development Staff"
+    },
+    "company": {
+      "id": "Computer Student Club PNJ",
+      "en": "Computer Student Club PNJ"
+    },
+    "period": {
+      "id": "2025",
+      "en": "2025"
+    },
+    "description": {
+      "id": "Mempelajari dan membuat projek website development fullstack menggunakan Framework Java Script.",
+      "en": "Learned and contributed to designing and building full-stack websites as part of the Software Development division."
+    }
+  },
+  {
+    "id": "exp-5",
+    "logo": "src/assets/Logo/Logo_Orbit_White.webp",
+    "logoAlt": "Orbit Universe Studio Logo",
+    "title": {
+      "id": "3D Artist",
+      "en": "3D Artist"
+    },
+    "company": {
+      "id": "Orbit Universe Studio",
+      "en": "Orbit Universe Studio"
+    },
+    "period": {
+      "id": "2024",
+      "en": "2024"
+    },
+    "description": {
+      "id": "Berkesempatan bergabung dengan team Orbit Universe Studio sebagai 3D Artist untuk mengerjakan project internal BUMN. Bertanggung jawab dalam pembuatan aset 3D, modeling, dan visualisasi untuk kebutuhan promosi dan presentasi corporate. Pengalaman bekerja dengan software 3D profesional dan pipeline production studio.",
+      "en": "Had the opportunity to join the Orbit Universe Studio team as a 3D Artist to work on internal SOE projects. Responsible for creating 3D assets, modeling, and visualization for corporate promotion and presentation needs. Experience working with professional 3D software and studio production pipelines."
+    }
+  },
+  {
+    "id": "exp-6",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Wijaya_Karya.svg/3840px-Wijaya_Karya.svg.png",
+    "logoAlt": "Wika Logo",
+    "title": {
+      "id": "Public Relations Intern",
+      "en": "Public Relations Intern"
+    },
+    "company": {
+      "id": "PT Wijaya Karya Industri & Konstruksi",
+      "en": "PT Wijaya Karya Industri & Konstruksi"
+    },
+    "period": {
+      "id": "2023 Praktik Kerja Industri (SMK)",
+      "en": "2023 Industrial Work Practice (Vocational)"
+    },
+    "description": {
+      "id": "Melakukan magang di bagian Public Relations, membantu dokumentasi kegiatan perusahaan, pembuatan konten media sosial, dan editing video untuk keperluan promosi corporate. Pengalaman kerja di lingkungan profesional BUMN.",
+      "en": "Interned in the Public Relations department, assisting in documenting company activities, creating social media content, and video editing for corporate promotion purposes. Work experience in a professional SOE environment."
+    },
+    "certificate": {
+      "url": "https://drive.google.com/file/d/1sbLT6HKEKlZEKTtM8nYRrVgfgyhpXESU/view?usp=sharing",
+      "label": {
+        "id": "Lihat Sertifikat",
+        "en": "View Certificate"
+      }
+    }
+  },
+  {
+    "id": "exp-7",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Coat_of_arms_of_Jakarta.svg/500px-Coat_of_arms_of_Jakarta.svg.png",
+    "logoAlt": "Logo DKI Jakarta",
+    "title": {
+      "id": "Juara 3 Lomba Desain Poster",
+      "en": "3rd Place Poster Design Competition"
+    },
+    "company": {
+      "id": "Balaikota Jakarta - Kompetisi Tingkat Provinsi",
+      "en": "Jakarta City Hall - Provincial Level Competition"
+    },
+    "period": {
+      "id": "2022",
+      "en": "2022"
+    },
+    "description": {
+      "id": "Meraih prestasi Juara 3 dalam kompetisi desain poster tingkat se-Provinsi Jakarta yang diselenggarakan di Balaikota Jakarta. Kompetisi ini mempertandingkan kemampuan desain poster dari berbagai peserta se-Jakarta. Achievement yang membuktikan kemampuan dalam bidang desain grafis dan kreativitas visual.",
+      "en": "Achieved 3rd Place in a provincial-level poster design competition held at Jakarta City Hall. This competition contested poster design skills of various participants across Jakarta. An achievement that proves capabilities in graphic design and visual creativity."
+    }
+  },
+  {
+    "id": "exp-8",
+    "logo": "src/assets/images/company-placeholder.svg",
+    "logoAlt": "Company Logo",
+    "title": {
+      "id": "Motion Graphics Designer",
+      "en": "Motion Graphics Designer"
+    },
+    "company": {
+      "id": "Freelance / Remote Work",
+      "en": "Freelance / Remote Work"
+    },
+    "period": {
+      "id": "2021 - Sekarang",
+      "en": "2021 - Present"
+    },
+    "description": {
+      "id": "Bekerja sebagai motion graphics designer remote untuk berbagai klien. Spesialisasi dalam motion design, video editing menggunakan After Effects dan Premiere Pro, serta pembuatan konten visual untuk media sosial dan promosi digital.",
+      "en": "Working as a remote motion graphics designer for various clients. Specialized in motion design, video editing using After Effects and Premiere Pro, as well as creating visual content for social media and digital promotion."
+    }
+  }
+]

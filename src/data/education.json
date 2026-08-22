@@ -1,0 +1,128 @@
+{
+  "education": [
+    {
+      "id": "edu-1",
+      "icon": "src/assets/Logo/DTIK_1.webp",
+      "iconType": "image",
+      "degree": {
+        "id": "D4 Teknik Multimedia Digital",
+        "en": "D4 Digital Multimedia Technology"
+      },
+      "school": {
+        "id": "Politeknik Negeri Jakarta",
+        "en": "Department of Informatics and Computer Engineering — Jakarta State Polytechnic"
+      },
+      "year": {
+        "id": "2024 - Sekarang (Semester 5)",
+        "en": "2024 - Present (5th Semester)"
+      },
+      "description": {
+        "id": "Sedang menempuh pendidikan D4 Teknik Multimedia Digital dengan fokus pada Software Engineering, Web Development, dan Game Development.",
+        "en": "Currently pursuing a D4 Digital Multimedia Technology degree in the Department of Informatics and Computer Engineering at PNJ, with a focus on Software Engineering, Web Development, and Game Development."
+      }
+    },
+    {
+      "id": "edu-2",
+      "icon": "src/assets/images/logo-smk.webp",
+      "iconType": "image",
+      "degree": {
+        "id": "SMK - Jurusan Multimedia",
+        "en": "Vocational High School - Multimedia"
+      },
+      "school": {
+        "id": "SMK Prestasi Prima",
+        "en": "Prestasi Prima Vocational High School"
+      },
+      "year": {
+        "id": "2022 - 2024",
+        "en": "2022 - 2024"
+      },
+      "description": {
+        "id": "Lulusan SMK jurusan Multimedia dengan fokus pada desain grafis, video editing, dan dasar-dasar pemrograman web. Pengalaman hands-on dengan Adobe Creative Suite dan web development.",
+        "en": "Vocational High School graduate majoring in Multimedia with a focus on graphic design, video editing, and basic web programming. Hands-on experience with Adobe Creative Suite and web development."
+      }
+    }
+  ],
+  "certificationsSection": {
+    "icon": "📜",
+    "title": {
+      "id": "Sertifikasi & Online Courses",
+      "en": "Certifications & Online Courses"
+    },
+    "provider": {
+      "id": "Various Online Platforms",
+      "en": "Various Online Platforms"
+    },
+    "period": {
+      "id": "2021 - 2025",
+      "en": "2021 - 2025"
+    },
+    "items": [
+      {
+        "id": "cert-1",
+        "icon": "💻",
+        "title": {
+          "id": "Pengenalan ke Logika Pemrograman (Programming Logic 101)",
+          "en": "Introduction to Programming Logic (Programming Logic 101)"
+        },
+        "issuer": {
+          "id": "Dicoding Indonesia",
+          "en": "Dicoding Indonesia"
+        },
+        "url": "https://www.dicoding.com/certificates/GRX52D8NRX0M"
+      },
+      {
+        "id": "cert-2",
+        "icon": "📊",
+        "title": {
+          "id": "Belajar Dasar Visualisasi Data",
+          "en": "Learning the Basics of Data Visualization"
+        },
+        "issuer": {
+          "id": "Dicoding Indonesia",
+          "en": "Dicoding Indonesia"
+        },
+        "url": "https://dicoding.com/certificates/KEXLLQLYWXG2"
+      },
+      {
+        "id": "cert-3",
+        "icon": "🎨",
+        "title": {
+          "id": "Pelatihan Peningkatan Kompetensi Peserta Didik SMK Bidang Keahlian Multimedia",
+          "en": "Competency Improvement Training for Multimedia Vocational High School Students"
+        },
+        "issuer": {
+          "id": "Pusat Pengembangan Kompetensi Pendidik, Tenaga Kependidikan Dan Kejuruan Jakarta Timur Provinsi DKI Jakarta",
+          "en": "Center for Competency Development of Educators, Educational Personnel and Vocational Jakarta East, DKI Jakarta Province"
+        },
+        "url": "https://drive.google.com/file/d/1CihJEYjUwZ8ZbQZGkl-70LCAz72aJV-Z/view?usp=sharing"
+      },
+      {
+        "id": "cert-4",
+        "icon": "🖼️",
+        "title": {
+          "id": "Junior Operator Desain Grafis",
+          "en": "Junior Graphic Design Operator"
+        },
+        "issuer": {
+          "id": "Lembaga Sertifikasi Profesi",
+          "en": "Professional Certification Agency"
+        },
+        "url": "https://drive.google.com/file/d/1ollFMdt9r3D2wkvYforbVY-iVjsgoGPj/view?usp=drive_link"
+      },
+      {
+        "id": "cert-5",
+        "icon": "🎓",
+        "title": {
+          "id": "Fasilitasi Pandu Literasi Digital Pendidikan Literasi Digital",
+          "en": "Facilitation of Digital Literacy Guides for Digital Literacy Education"
+        },
+        "issuer": {
+          "id": "Pusat Pengembangan Literasi Digital",
+          "en": "Digital Literacy Development Center"
+        },
+        "url": "https://drive.google.com/file/d/1kN6H0XE8MmBHZNLYGzFhaaNczojc5V-D/view?usp=drive_link"
+      }
+    ]
+  }
+}
