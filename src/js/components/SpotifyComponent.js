@@ -279,8 +279,8 @@ class SpotifyComponent extends HTMLElement {
         const isPlaying = this.spotifyData.isPlaying;
 
         const statusText = isPlaying
-            ? (lang === 'en' ? 'Listening to Spotify' : 'Sedang Mendengarkan Spotify')
-            : (lang === 'en' ? 'Offline · Last Played' : 'Offline · Terakhir Diputar');
+            ? (lang === 'en' ? 'Listening to Spotify' : 'Listening to Spotify')
+            : (lang === 'en' ? 'Offline · Last Played' : 'Offline · Last Played');
 
         const subStatusTime = !isPlaying && this.spotifyData.lastPlayed
             ? (typeof this.spotifyData.lastPlayed.text === 'object' && this.spotifyData.lastPlayed.text !== null

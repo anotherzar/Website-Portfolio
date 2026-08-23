@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
 /* 
    1. CSS VARIABLES (ROOT)
     */
 
 :root {
+    /* Fonts */
+    --font-serif: 'Instrument Serif', serif;
+    --font-times-condensed: var(--font-serif);
+
     /* Background Colors */
     --bg: #0f0f0f;
     --bg-nav: #131313;
@@ -96,6 +102,11 @@ body {
     line-height: 1.6;
     display: flex;
     flex-direction: column;
+}
+
+.font-italic {
+    font-family: var(--font-serif);
+    font-style: italic;
 }
 
 main {

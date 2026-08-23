@@ -9,6 +9,113 @@
     padding-bottom: 1px;
 }
 
+/* iOS Text Selection Block */
+.text-block {
+    position: relative;
+    display: inline-block;
+    background: rgba(0, 122, 255, 0.28);
+    color: #ffffff;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin: 0 4px;
+    line-height: 1.25;
+}
+
+/* iOS Top-Left Selection Pin (Dot + Line) */
+.text-block::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -4px;
+    width: 10px;
+    height: calc(100% + 8px);
+    background: 
+        radial-gradient(circle at 5px 5px, #007aff 4.5px, transparent 5px),
+        linear-gradient(#007aff, #007aff);
+    background-size: 10px 10px, 2px 100%;
+    background-position: 0 0, 4px 4px;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* iOS Bottom-Right Selection Pin (Line + Dot) */
+.text-block::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    right: -4px;
+    width: 10px;
+    height: calc(100% + 8px);
+    background: 
+        radial-gradient(circle at 5px calc(100% - 5px), #007aff 4.5px, transparent 5px),
+        linear-gradient(#007aff, #007aff);
+    background-size: 10px 10px, 2px calc(100% - 5px);
+    background-position: 0 bottom, 4px 0;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* iOS Callout Popup Menu */
+.ios-popup {
+    position: absolute;
+    bottom: calc(100% + 14px);
+    left: -4px;
+    display: inline-flex;
+    align-items: center;
+    background: #2c2c2e;
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+    border-radius: 9px;
+    padding: 6px 14px;
+    gap: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+    white-space: nowrap;
+    z-index: 10;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+.ios-popup span {
+    cursor: default;
+    user-select: none;
+}
+
+.ios-popup .menu-arrow {
+    font-size: 0.65rem;
+    opacity: 0.6;
+}
+
+.ios-popup .menu-item {
+    color: #ffffff;
+}
+
+.ios-popup .menu-item.active {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.ios-popup .menu-divider {
+    width: 1px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.ios-popup::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 16px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: #2c2c2e transparent transparent transparent;
+}
+
+
+
 .hero-content {
     flex: 1;
     min-width: 0;
