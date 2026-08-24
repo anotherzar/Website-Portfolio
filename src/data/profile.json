@@ -22,6 +22,6 @@
   },
   "avatar": "src/assets/images/pfp.webp",
   "avatarAlt": "Fazar Profile Picture",
-  "banner": "https://media.discordapp.net/attachments/1314953424684716034/1540936892349157447/ChatGPT_Image_Aug_23_2026_11_11_57_AM.png?ex=6a8bc4d0&is=6a8a7350&hm=e2f4d109ead7fe3452905a27e0f7eeccc5d2f597e4f5b68815ecfdd08c4c5b92&=&format=webp&quality=lossless&width=1536&height=879",
+  "banner": "src/assets/images/banner.png",
   "bannerAlt": "Profile Banner"
 }
