@@ -5,7 +5,7 @@ class ClientMarquee extends HTMLElement {
         this.clientsData = [
             [
                 { src: 'src/assets/images/RoofMRI.webp', alt: 'RoofMRI' },
-                { src: 'https://cms.wika.co.id/storage/1888/Wika-Industri-Kontruksi.png', alt: 'wikaikon' },
+                { src: 'src/assets/Logo/LOGO-WIKAIKON-PRIME-scaled.png', alt: 'wikaikon' },
                 { src: 'src/assets/images/Sony Music.webp', alt: 'sonymusic' },
                 { src: 'src/assets/images/forRevenge.webp', alt: 'ForRevenge' },
                 { src: 'src/assets/images/SHA.webp', alt: 'sha' },
